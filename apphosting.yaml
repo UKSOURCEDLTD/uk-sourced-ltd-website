@@ -5,3 +5,21 @@ runConfig:
   concurrency: 80
   cpu: 1
   memoryMiB: 1024
+
+# Environment variables
+# These are public client-side keys, so it is safe to include them here for your specialized setup.
+env:
+  - variable: NEXT_PUBLIC_FIREBASE_API_KEY
+    value: AIzaSyBFVWMzH90k6h7GdL58EtD7WXLtLJ9lkEs
+  - variable: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
+    value: uk-sourced-ltd-site.firebaseapp.com
+  - variable: NEXT_PUBLIC_FIREBASE_PROJECT_ID
+    value: uk-sourced-ltd-site
+  - variable: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
+    value: uk-sourced-ltd-site.firebasestorage.app
+  - variable: NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
+    value: 404597428356
+  - variable: NEXT_PUBLIC_FIREBASE_APP_ID
+    value: 1:404597428356:web:cbb80896f97d1a8f8572d1
+  - variable: NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
+    value: G-YVSJB4XZ59
