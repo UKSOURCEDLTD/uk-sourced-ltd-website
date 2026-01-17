@@ -9,6 +9,7 @@ import { Loader2 } from 'lucide-react';
 
 interface BlogPost {
     id: string;
+    slug: string;
     title: string;
     excerpt: string;
     category: string;
@@ -119,7 +120,7 @@ export default function BlogPage() {
                 ) : (
                     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-[340px]">
                         {posts.map((post) => (
-                            <Link key={post.id} href={`/blog/${post.id}`} className="bento-article group block h-full">
+                            <Link key={post.id} href={`/blog/${post.slug || post.id}`} className="bento-article group block h-full">
                                 <div className="space-y-4 h-full flex flex-col">
                                     <div className="flex justify-between items-start">
                                         <span className="data-label text-desaturated-teal">{post.category || 'Opinion'}</span>
