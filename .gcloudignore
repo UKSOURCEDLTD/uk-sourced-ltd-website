@@ -1,6 +1,0 @@
-.git
-.next
-node_modules
-README.md
-deploy_to_cloud_run.ps1
-npm-debug.log
