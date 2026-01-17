@@ -7,13 +7,13 @@ export default function WholesalePage() {
             <main className="max-w-screen-2xl mx-auto">
                 <section className="grid grid-cols-1 lg:grid-cols-2 min-h-[60vh] border-b border-border-subtle">
                     <div className="p-12 md:p-24 flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-border-subtle bg-white">
-                        <div className="data-label text-desaturated-teal mb-6">Wholesale Distribution</div>
+                        <div className="data-label text-desaturated-teal mb-6">Amazon Distribution Partner</div>
                         <h1 className="text-4xl md:text-6xl font-light mb-10 leading-tight">
                             Wholesale Partnership <br />
                             <span className="font-semibold text-deep-charcoal">Reimagined</span>
                         </h1>
                         <p className="text-lg text-deep-charcoal/80 mb-12 max-w-xl leading-relaxed">
-                            We don&apos;t just move boxes; we engineer flow. Our wholesale partnership model focuses on high-velocity FBA brand elevation, ensuring your products dominate the Buy Box while maintaining strict Prime performance standards.
+                            We don&apos;t just move boxes; we engineer flow. Our wholesale partnership model focuses on high-velocity FBA account management and distribution, ensuring your products dominate the Buy Box while maintaining strict Prime performance standards.
                         </p>
                         <Link
                             href="/contact"

@@ -20,7 +20,7 @@ const robotoMono = Roboto_Mono({
 
 
 export const metadata: Metadata = {
-  title: "Vibe Agency | Future of Sales",
+  title: "UK Sourced Ltd | Future of Sales",
   description: "Autonomous Sales Funnel & Agency",
 };
 

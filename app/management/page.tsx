@@ -14,10 +14,10 @@ export default function ManagementPage() {
                         </div>
                         <h1 className="text-5xl md:text-8xl mb-10 font-light leading-[0.95] tracking-tighter">
                             Elite <br />
-                            <span className="font-semibold text-desaturated-teal">Amazon Growth Partner</span>
+                            <span className="font-semibold text-desaturated-teal">Account Management & Distribution Partner</span>
                         </h1>
                         <p className="text-xl max-w-xl mb-14 text-deep-charcoal/70">
-                            We don&apos;t just clear errors; we engineer dominance. UK Sourced Ltd combines elite strategic oversight with relentless operational execution to scale your brand on Amazon.
+                            We don&apos;t just clear errors; we engineer dominance. UK Sourced Ltd combines elite strategic oversight with relentless distribution execution to scale your brand on Amazon.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-5">
                             <Link

@@ -19,7 +19,7 @@ export default function ConsultingPage() {
                                 <span className="font-semibold text-desaturated-teal">for the Amazon Ecosystem</span>
                             </h1>
                             <p className="text-xl max-w-lg">
-                                Navigating high-stakes marketplace dynamics with surgical precision. Our advisory layer provides the architectural blueprint for global dominance.
+                                Navigating high-stakes marketplace dynamics with surgical precision. Our advisory layer provides the architectural blueprint for global account management and distribution dominance.
                             </p>
                             <div className="flex items-center gap-8 pt-6">
                                 <a className="bg-desaturated-teal text-white px-10 py-5 font-bold uppercase tracking-widest text-[11px] rounded-sm hover:bg-deep-charcoal transition-all" href="#packages">Engagement Tiers</a>

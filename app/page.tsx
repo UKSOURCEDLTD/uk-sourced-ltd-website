@@ -1,4 +1,4 @@
- 
+
 'use client';
 
 import { useState } from 'react';
@@ -26,7 +26,7 @@ export default function Home() {
         <div className="lg:col-span-7 p-8 md:p-24 flex flex-col justify-center border-r border-border-subtle">
           <div className="mb-8 data-label flex items-center gap-3">
             <span className="w-2 h-2 rounded-full bg-desaturated-teal"></span>
-            Amazon Account Management
+            Amazon Account Management & Distribution
           </div>
           <h1 className="text-5xl md:text-7xl mb-12 font-light">
             Scaling on the <br />
@@ -35,7 +35,7 @@ export default function Home() {
             </span>
           </h1>
           <p className="text-xl max-w-xl mb-14">
-            Redefining the standard for Amazon FBA partnerships. We deploy
+            Redefining the standard for Amazon Account Management & Distribution. We deploy
             sophisticated logistics infrastructure and analytical rigor to
             scale brands within the ecosystem.
           </p>

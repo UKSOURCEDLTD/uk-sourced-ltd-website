@@ -160,7 +160,7 @@ export default function AboutPage() {
                             </div>
                             <div className="md:pl-12">
                                 <h3 className="text-xl font-semibold mb-4">Foundational Logic</h3>
-                                <p className="text-sm">UK Sourced Ltd established with a focus on high-fidelity logistics for UK-based manufacturers entering the Amazon ecosystem.</p>
+                                <p className="text-sm">UK Sourced Ltd established with a focus on high-fidelity account management and distribution for UK-based manufacturers entering the Amazon ecosystem.</p>
                             </div>
                             <div className="absolute left-1/2 top-2 w-3 h-3 bg-white border-2 border-desaturated-teal rounded-full -translate-x-1/2 hidden md:block"></div>
                         </div>
@@ -182,7 +182,7 @@ export default function AboutPage() {
                             </div>
                             <div className="md:pl-12">
                                 <h3 className="text-xl font-semibold mb-4">The Final Protocol</h3>
-                                <p className="text-sm">Global deployment of the 2026 Management Suite, offering end-to-end retail partnership for tier-1 brands across three continents.</p>
+                                <p className="text-sm">Global deployment of the 2026 Management Suite, offering end-to-end account management and distribution for tier-1 brands across three continents.</p>
                             </div>
                             <div className="absolute left-1/2 top-2 w-3 h-3 bg-desaturated-teal rounded-full -translate-x-1/2 hidden md:block"></div>
                         </div>
