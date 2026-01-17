@@ -1,19 +1,7 @@
+# Settings for Cloud Run
 runConfig:
-  cpu: 1
-  memoryMiB: 2048
   minInstances: 0
   maxInstances: 10
   concurrency: 80
-env:
-  - variable: NEXT_PUBLIC_FIREBASE_API_KEY
-    availability: [BUILD, RUNTIME]
-  - variable: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
-    availability: [BUILD, RUNTIME]
-  - variable: NEXT_PUBLIC_FIREBASE_PROJECT_ID
-    availability: [BUILD, RUNTIME]
-  - variable: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
-    availability: [BUILD, RUNTIME]
-  - variable: NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
-    availability: [BUILD, RUNTIME]
-  - variable: NEXT_PUBLIC_FIREBASE_APP_ID
-    availability: [BUILD, RUNTIME]
+  cpu: 1
+  memoryMiB: 1024
