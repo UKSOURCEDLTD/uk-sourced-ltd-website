@@ -20,7 +20,7 @@ const robotoMono = Roboto_Mono({
 
 
 export const metadata: Metadata = {
-  title: "UK Sourced Ltd | Future of Sales",
+  title: "UK Sourced Ltd | Amazon Growth Partners",
   description: "Autonomous Sales Funnel & Agency",
 };
 
