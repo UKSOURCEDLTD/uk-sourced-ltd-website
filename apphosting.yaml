@@ -1,0 +1,8 @@
+runConfig:
+  environmentVariables:
+    NEXT_PUBLIC_FIREBASE_API_KEY: "API_KEY_PLACEHOLDER"
+    NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN: "uk-sourced-ltd-site.firebaseapp.com"
+    NEXT_PUBLIC_FIREBASE_PROJECT_ID: "uk-sourced-ltd-site"
+    NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET: "uk-sourced-ltd-site.firebasestorage.app"
+    NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID: "404597428356"
+    NEXT_PUBLIC_FIREBASE_APP_ID: "1:404597428356:web:cbb80896f97d1a8f8572d1"
