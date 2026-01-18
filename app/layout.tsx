@@ -20,8 +20,17 @@ const robotoMono = Roboto_Mono({
 
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.uksourcedltd.com'),
   title: "UK Sourced Ltd | Amazon Growth Partners",
   description: "Autonomous Sales Funnel & Agency",
+  openGraph: {
+    title: "UK Sourced Ltd | Amazon Growth Partners",
+    description: "Autonomous Sales Funnel & Agency",
+    url: 'https://www.uksourcedltd.com',
+    siteName: 'UK Sourced Ltd',
+    locale: 'en_GB',
+    type: 'website',
+  },
 };
 
 import Header from "@/components/Header";

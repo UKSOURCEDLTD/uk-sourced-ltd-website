@@ -18,7 +18,6 @@ export default function Header() {
         { href: "/consulting", label: "Consulting" },
 
         { href: "/blog", label: "Blog" },
-        { href: "/ai-readiness", label: "AI Readiness" },
         { href: "/about", label: "About" },
         { href: "/contact", label: "Contact" },
     ];

@@ -38,7 +38,7 @@ export default function AiReadinessPage() {
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-desaturated-teal"></span>
                         </span>
                         <span className="text-[10px] font-mono uppercase tracking-widest text-desaturated-teal font-bold">
-                            Live Protocol: 2026 Ready
+                            Live Protocol: 2026 Ready • Powered by Google Antigravity
                         </span>
                     </motion.div>
 
@@ -48,8 +48,8 @@ export default function AiReadinessPage() {
                         transition={{ duration: 0.8 }}
                         className="text-5xl md:text-8xl font-heading font-medium text-deep-charcoal mb-8 tracking-tight leading-none"
                     >
-                        Ready for the <br />
-                        <span className="text-desaturated-teal italic">Algorithm of Tomorrow</span>
+                        Stepping into 2026 with <br />
+                        <span className="text-desaturated-teal italic">Google's Unified AI Stack</span>
                     </motion.h1>
 
                     <motion.p
@@ -58,8 +58,7 @@ export default function AiReadinessPage() {
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className="text-xl md:text-2xl text-deep-charcoal/60 max-w-3xl mx-auto font-light leading-relaxed mb-12"
                     >
-                        Commerce is shifting from human-first to agent-first search.
-                        We have built the infrastructure to ensure your brand is chosen when machines make the buying decisions.
+                        You sell on Amazon. Soon, machines will buy on Amazon. We help you sell to them.
                     </motion.p>
                 </div>
             </section>
@@ -77,32 +76,31 @@ export default function AiReadinessPage() {
                         <div>
                             <span className="data-label text-desaturated-teal mb-4 block">The Paradigm Shift</span>
                             <h2 className="text-4xl md:text-5xl font-heading font-medium text-deep-charcoal mb-6">
-                                From SEO to <span className="italic">AIO</span>.
+                                The Old Way vs. <span className="italic">The Future</span>.
                             </h2>
                             <p className="text-lg text-deep-charcoal/70 leading-relaxed">
-                                Traditional SEO was about ranking for keywords on a results page.
-                                <span className="font-semibold text-deep-charcoal"> Agentic Optimization (AIO)</span> is about being the single correct answer provided by an AI agent.
+                                For the last decade, selling on Amazon meant optimizing for human eyes: catchy titles, emotional imagery, and psychology-driven pricing. This was the "Human SEO" era.
                             </p>
                             <p className="text-lg text-deep-charcoal/70 leading-relaxed mt-4">
-                                By 2026, a significant portion of re-ordering and discovery will be handled by autonomous buying agents. If your data isn't structured for them, you don't exist.
+                                But in 2026, a massive shift occurs. Smart AI agents will begin purchasing on behalf of consumers. These "buying bots" don't care about pretty pictures. They care about data integrity, stock reliability, and price logic. This is <strong>Agentic Optimization</strong>, and it's what keeps your brand visible when the shopper isn't a human.
                             </p>
                         </div>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 border-t border-border-subtle pt-8">
                             <div>
-                                <h3 className="text-lg font-bold mb-2">Human Era</h3>
+                                <h3 className="text-lg font-bold mb-2">Optimizing for Heads</h3>
                                 <ul className="text-sm text-deep-charcoal/60 space-y-2 font-mono">
-                                    <li>• Keywords & Backlinks</li>
-                                    <li>• Visual Appeal Focus</li>
-                                    <li>• 10 Blue Links</li>
+                                    <li>• "Clickbait" Titles</li>
+                                    <li>• Emotional A+ Content</li>
+                                    <li>• Psychology Pricing ($19.99)</li>
                                 </ul>
                             </div>
                             <div>
-                                <h3 className="text-lg font-bold text-desaturated-teal mb-2">Agent Era</h3>
+                                <h3 className="text-lg font-bold text-desaturated-teal mb-2">Optimizing for Bots</h3>
                                 <ul className="text-sm text-deep-charcoal/60 space-y-2 font-mono">
-                                    <li>• Structured Data & Schema</li>
-                                    <li>• API Reliability</li>
-                                    <li>• The "One Best" Answer</li>
+                                    <li>• Perfect Schema Data</li>
+                                    <li>• 100% In-Stock Reliability</li>
+                                    <li>• Algorithmic Value Logic</li>
                                 </ul>
                             </div>
                         </div>
@@ -133,14 +131,73 @@ export default function AiReadinessPage() {
                 </div>
             </section>
 
-            {/* Core Infrastructure */}
+            {/* Antigravity Section - NEW */}
+            <section className="py-32 px-8 bg-deep-charcoal text-white relative overflow-hidden">
+                {/* Abstract BG */}
+                <div className="absolute inset-0 opacity-10">
+                    <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path d="M0 100 L100 0 L100 100 Z" fill="white" />
+                    </svg>
+                </div>
+
+                <div className="max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 relative z-10">
+                    <div className="lg:col-span-12 text-center mb-8">
+                        <span className="inline-block py-1 px-3 rounded border border-desaturated-teal/50 text-desaturated-teal text-xs font-mono tracking-widest uppercase mb-6">
+                            Verified Technology Partner
+                        </span>
+                        <h2 className="text-4xl md:text-6xl font-heading font-medium mb-6">
+                            What is <span className="text-desaturated-teal">Google Antigravity?</span>
+                        </h2>
+                        <p className="text-xl md:text-2xl text-white/70 max-w-4xl mx-auto font-light leading-relaxed">
+                            It's the engine that lets us manage your Amazon account with superhuman speed.
+                        </p>
+                    </div>
+
+                    <div className="lg:col-span-12 flex flex-col justify-center gap-12 max-w-4xl mx-auto text-center">
+                        <p className="text-lg text-white/60 leading-relaxed">
+                            Imagine having an account manager who never sleeps, watches every single competitor price change 24/7, and instantly predicts when you're about to run out of stock. That is what Antigravity does for your brand.
+                        </p>
+                        <p className="text-lg text-white/60 leading-relaxed">
+                            We use Google's most advanced AI technology to scan thousands of data points—from global market trends to micro-competitor moves—in real-time. This allows our human experts to make decisions based on hard data, not just gut feeling.
+                        </p>
+                    </div>
+
+                    <div className="lg:col-span-7 order-1 lg:order-2">
+                        <div className="relative rounded-lg border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
+                            <div className="font-mono text-xs text-desaturated-teal mb-4">/// SYSTEM_LOG: ANTIGRAVITY_CORE</div>
+                            <div className="space-y-4 font-mono text-sm text-white/80">
+                                <div className="flex gap-4">
+                                    <span className="text-white/40">09:41:22</span>
+                                    <span>Syncing with Global Market Data... [COMPLETE]</span>
+                                </div>
+                                <div className="flex gap-4">
+                                    <span className="text-white/40">09:41:23</span>
+                                    <span>Analyzing Competitor Pricing Models... [OPTIMIZED]</span>
+                                </div>
+                                <div className="flex gap-4">
+                                    <span className="text-white/40">09:41:25</span>
+                                    <span>Generating Strategic Growth Pathways... [READY]</span>
+                                </div>
+                                <div className="mt-8 p-4 bg-desaturated-teal/10 border border-desaturated-teal/30 rounded text-desaturated-teal">
+                                    <span className="font-bold">STATUS:</span> AI-First Infrastructure Active.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Core Infrastructure & Experience */}
             <section className="py-32 px-8 bg-soft-bg border-y border-border-subtle">
                 <div className="max-w-screen-2xl mx-auto">
-                    <div className="text-center mb-24">
-                        <span className="data-label text-desaturated-teal mb-4 block">Our Infrastructure</span>
-                        <h2 className="text-4xl md:text-5xl font-heading font-medium text-deep-charcoal">
-                            Built on the 4 Pillars of <br /> Agentic Readiness
+                    <div className="text-center mb-24 max-w-4xl mx-auto">
+                        <span className="data-label text-desaturated-teal mb-4 block">The Perfect Balance</span>
+                        <h2 className="text-4xl md:text-5xl font-heading font-medium text-deep-charcoal mb-8">
+                            How We Prepare You (The 4 Pillars)
                         </h2>
+                        <p className="text-xl text-deep-charcoal/70 leading-relaxed">
+                            Here is exactly how we ensure your Amazon business is ready for the age of AI.
+                        </p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -148,22 +205,22 @@ export default function AiReadinessPage() {
                             {
                                 icon: Database,
                                 title: "Structured Data",
-                                desc: "Granular schema implementation ensures agents understand your product's weight, dimensions, and benefits instantly."
+                                desc: "We format your product listings so Amazon's algorithms perfectly understand exactly what you sell—boosting your search visibility automatically."
                             },
                             {
                                 icon: Network,
-                                title: "API-First",
-                                desc: "Real-time inventory and pricing feeds that integrate directly with major buying platforms and procurement bots."
+                                title: "API-First Logistics",
+                                desc: "We connect your warehouse directly to Amazon. This means you never accidentally oversell or run out of stock, keeping your 'seller rating' flawless."
                             },
                             {
                                 icon: Cpu,
-                                title: "Adaptive Pricing",
-                                desc: "Algorithmic pricing strategies that react faster than competitors, securing the 'Buy Box' for automated purchases."
+                                title: "Smart Repricing",
+                                desc: "Our systems adjust your prices 24/7 to beat competitors to the 'Buy Box' without sacrificing your profit margins."
                             },
                             {
                                 icon: ShieldCheck,
-                                title: "Voice Authority",
-                                desc: "Content optimized for Natural Language Processing (NLP) to dominate voice search queries on Alexa and Google."
+                                title: "Human Guardrails",
+                                desc: "AI does the math, but our veteran experts make the final judgment calls. We ensure technology serves your brand, not the other way around."
                             }
                         ].map((item, i) => (
                             <motion.div
@@ -188,18 +245,17 @@ export default function AiReadinessPage() {
             </section>
 
             {/* Strategic Advantage & CTA */}
-            <section className="py-32 px-8 bg-deep-charcoal text-white relative overflow-hidden">
-                <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-10"></div>
+            <section className="py-32 px-8 bg-white border-t border-border-subtle relative overflow-hidden">
                 <div className="max-w-screen-xl mx-auto text-center relative z-10 space-y-12">
                     <h2 className="text-4xl md:text-6xl font-heading font-medium">
-                        Future-Proof Your Brand
+                        Is Your Business Ready?
                     </h2>
-                    <p className="text-xl text-white/60 max-w-2xl mx-auto font-light">
-                        Don't let the shift to AI leave your products invisible. Partner with the agency that is already speaking the language of the future.
+                    <p className="text-xl text-deep-charcoal/60 max-w-2xl mx-auto font-light">
+                        Don't get left behind as the market evolves. Partner with the agency that speaks the language of the future.
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center gap-6">
                         <BookingButton onClick={() => setIsBookingModalOpen(true)} />
-                        <Link href="/contact" className="px-8 py-4 border border-white/20 hover:bg-white hover:text-deep-charcoal transition-all text-sm font-bold uppercase tracking-widest rounded-sm">
+                        <Link href="/contact" className="px-8 py-4 border border-deep-charcoal/20 hover:bg-deep-charcoal hover:text-white transition-all text-sm font-bold uppercase tracking-widest rounded-sm">
                             Contact Strategy Team
                         </Link>
                     </div>
