@@ -13,10 +13,11 @@ const IMAGE_SLOTS = [
     { id: 'home_about_img', label: 'Home: About Section', description: 'Image displayed in the About section.' },
     { id: 'footer_logo', label: 'Footer: Logo', description: 'Logo displayed in the site footer.' },
     { id: 'consulting_network_grid', label: 'Consulting: Network Grid', description: 'Hero image on the Consulting page.' },
-    { id: 'about_hero_structure', label: 'About: Hero Structure', description: 'Hero abstract image on the About page.' },
-    { id: 'about_team_jameson', label: 'About: Team Jameson', description: 'Portrait of James Thorne.' },
-    { id: 'about_team_elena', label: 'About: Team Elena', description: 'Portrait of Elena Vance.' },
-    { id: 'about_team_marcus', label: 'About: Team Marcus', description: 'Portrait of Marcus Chen.' },
+    { id: 'about_hero_main', label: 'About: Hero Main', description: 'Main hero image on the About page.' },
+    { id: 'about_team_luke', label: 'About: Team Luke', description: 'Portrait of Luke Needham.' },
+    { id: 'about_team_codie', label: 'About: Team Codie', description: 'Portrait of Codie Simpson.' },
+    { id: 'about_team_liam', label: 'About: Team Liam', description: 'Portrait of Liam Elliot.' },
+    { id: 'about_team_kilmer', label: 'About: Team Kilmer', description: 'Portrait of Kilmer Vergara.' },
 ];
 
 interface ImageSlotData {
@@ -111,24 +112,29 @@ export default function SiteImagesPage() {
                     filename: 'consulting_network_grid.jpg'
                 },
                 {
-                    slotId: 'about_hero_structure',
+                    slotId: 'about_hero_main',
                     url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBfigwmoRZmNFL23ceYUbc9gUxdKZn9BBCPoTJyzLaXcZykpVU-kb7Iz8e5IYp0yv6aUcStpKuvx_rKqFckfTLm0f0aimyPfbpShz1NcKJgAX621uekZG89h-pKbMQsV_0wQI7wc6x-u3fXBatcxSuRm4Z-n9_NU28iTpM-Hiq_1uNi2IZcQrmbX_6GOW7hAojSsnbGGUlgAa0Bl2_dtBlKGnCkufBRAQv4MQoS00fsXR-TFSpeWLHlF_9uC-xBB0xwD9pKcqzv2myM',
-                    filename: 'about_hero_structure.jpg'
+                    filename: 'about_hero_main.jpg'
                 },
                 {
-                    slotId: 'about_team_jameson',
+                    slotId: 'about_team_luke',
                     url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCqIFsFd_agmGSHxVmqK-v4mdmSqrsYyssWogT_ORWxxJ57pKW1yZofFUQVQAlfhjdjPF6fq1Sl366K8LoKEuvmfw788GC6e4N6wws-MQ7Y8XtHWPHhR7khGkBHzXUoHwW51HafkrEMWQzA0GcmQxXYiIDQ6zUtKAOMLmgGw2e6uM9KqRdIAflDxnUfP0GXznFpfhjv7jkEHq1IqSOwUvb_WP5B5ylE-dY8WBt2D9Ubjk-8E3-UmDuDVc_tXd__B6FuK7iJp187O4-8',
-                    filename: 'about_team_jameson.jpg'
+                    filename: 'about_team_luke.jpg'
                 },
                 {
-                    slotId: 'about_team_elena',
+                    slotId: 'about_team_codie',
                     url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCMojOtwkEtJ3ujJcBlUrO3hCCT0a1Jwg9w6ZUJ84WowfJoHcAo8Hd9Fg4ocqFTOl1UK6oh4uBZVRHzLNX0n10Qn-3ESrGcqLV3q1o6F6pRhJbYFAyuqO_rwT0i5f0ZBEK9wRDxFjMsYSCtwoTMlnKyWrVDdEndD2th5smdNulPbSA529k-W2blBFBWFoVGCDgJwukSfNKKlTdGWvoy-MTGBXeoR4YIcQ__spkmIh6F0ADzwO4YmcvgfvIzRJk-r61wbAXBL_bZ1-UC',
-                    filename: 'about_team_elena.jpg'
+                    filename: 'about_team_codie.jpg'
                 },
                 {
-                    slotId: 'about_team_marcus',
+                    slotId: 'about_team_liam',
                     url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBzih8pm2YJ03anOC5NkXi19mf3zdR73shJj0bJPMwNrUKqsdW1XRbVZ7mbVbnA7_n7VxV22k3Nhm6g1ELhMEUl3m6pJPPNiLCKWxVXOQ1-PlYF_iE-oRhO_Oye-se_NycH4l7wBLTqLg1Ix2Bbk00P8pu7J15YwsolUR4nKdR2fUfLViV9879WJkXSkMENgl0bJ0XLEz3fV80trfPnATeHX3CSagv1sSlE4xp-r3wXf-TJyWhg2ncgZfNosVh4yMMmKItW2ImKQ9V4',
-                    filename: 'about_team_marcus.jpg'
+                    filename: 'about_team_liam.jpg'
+                },
+                {
+                    slotId: 'about_team_kilmer',
+                    url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDjr6lQ9pG6_r-_I2b-G_m0J0l8lYF_tM-vA-eDq5Z2oW67p5r8fG_m0J0l8lYF_tM-vA-eDq5Z2oW67p5r8fG_m0J0l8lYF_tM-vA-eDq5Z2oW67p5r8fG_m0J0l8lYF_tM-vA-eDq5',
+                    filename: 'about_team_kilmer.jpg'
                 }
             ];
 
