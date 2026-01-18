@@ -17,7 +17,6 @@ export default function Header() {
         { href: "/consulting", label: "Consulting" },
         { href: "/wholesale", label: "Wholesale" },
 
-        { href: "/blog", label: "Blog" },
         { href: "/about", label: "About" },
         { href: "/contact", label: "Contact" },
     ];

@@ -22,6 +22,12 @@ export default function Footer() {
                 </div>
                 <div className="flex gap-14 text-[10px] font-mono tracking-[0.2em] uppercase font-bold text-deep-charcoal/40">
                     <Link
+                        href="/blog"
+                        className="hover:text-desaturated-teal transition-colors underline decoration-desaturated-teal/20 underline-offset-8"
+                    >
+                        Blog
+                    </Link>
+                    <Link
                         href="/privacy"
                         className="hover:text-desaturated-teal transition-colors underline decoration-desaturated-teal/20 underline-offset-8"
                     >
