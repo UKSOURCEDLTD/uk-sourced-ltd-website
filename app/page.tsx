@@ -6,6 +6,8 @@ import Link from 'next/link';
 import BookingModal from '@/components/BookingModal';
 import BookingButton from '@/components/BookingButton';
 import DynamicImage from '@/components/DynamicImage';
+import ServiceComparison from '@/components/ServiceComparison';
+import ContactForm from '@/components/ContactForm';
 
 export default function Home() {
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
@@ -202,6 +204,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <ServiceComparison />
+      <ContactForm />
 
       <BookingModal
         isOpen={isBookingModalOpen}
