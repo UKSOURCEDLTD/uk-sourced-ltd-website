@@ -70,7 +70,7 @@ export default function ConsultingPage() {
                             <div className="w-14 h-14 bg-desaturated-teal/10 rounded-lg flex items-center justify-center mb-8 text-desaturated-teal group-hover:bg-desaturated-teal group-hover:text-white transition-colors">
                                 <TrendingUp className="w-7 h-7" />
                             </div>
-                            <h3 className="text-xl font-bold mb-3">The "Honeymoon" Protocol</h3>
+                            <h3 className="text-xl font-bold mb-3">The "Launch Phase" Protocol</h3>
                             <div className="text-[10px] font-mono text-desaturated-teal mb-4 uppercase tracking-widest">SOP 2.1: New Product Launch</div>
                             <p className="text-deep-charcoal/60 mb-6 text-sm leading-relaxed">
                                 A 14-day pre-launch sequence designed to maximize algorithm ranking. Includes Reverse ASIN research, Vine enrollment, and aggressive Exact Match PPC to spike initial velocity.
@@ -310,7 +310,7 @@ export default function ConsultingPage() {
                                     <label className="data-label !text-[9px]">Interest</label>
                                     <select className="w-full bg-white border-border-subtle focus:ring-1 focus:ring-desaturated-teal focus:border-desaturated-teal text-sm py-4 px-4 transition-all appearance-none cursor-pointer">
                                         <option>Profit Recovery Audit</option>
-                                        <option>New Product Launch (Honeymoon Strategy)</option>
+                                        <option>New Product Launch (Launch Phase Strategy)</option>
                                         <option>Catalog Rehabilitation</option>
                                         <option>Full Retainer Inquiry</option>
                                     </select>

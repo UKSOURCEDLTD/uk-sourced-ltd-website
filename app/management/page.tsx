@@ -73,7 +73,7 @@ export default function ManagementPage() {
                                         <CheckCircle2 className="w-6 h-6 text-desaturated-teal shrink-0 mt-1" />
                                         <div>
                                             <h4 className="font-bold text-deep-charcoal text-lg">The UK Sourced Standard</h4>
-                                            <p className="text-sm text-deep-charcoal/70 mt-1">"We have a Protocol." 9:00 AM Health Checks, strict naming conventions, and 90-day strategic roadmaps.</p>
+                                            <p className="text-sm text-deep-charcoal/70 mt-1">"We have a Protocol." Daily Health Checks, strict naming conventions, and 90-day strategic roadmaps.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -102,7 +102,7 @@ export default function ManagementPage() {
                             </div>
                             <h3 className="text-2xl font-semibold mb-4">Ironclad Governance</h3>
                             <p className="text-deep-charcoal/70 mb-6 leading-relaxed">
-                                We sleep with one eye open so you don't have to. Our <strong>Daily 9:00 AM Health Check</strong> (SOP 6.1) catches policy warnings, suppressed listings, and NCX spikes before they become disasters.
+                                We sleep with one eye open so you don't have to. Our <strong>Daily Health Check</strong> (SOP 6.1) catches policy warnings, suppressed listings, and NCX spikes before they become disasters.
                             </p>
                             <ul className="space-y-2 text-sm text-deep-charcoal/60 font-mono">
                                 <li className="flex items-center gap-2 px-3 py-2 bg-soft-bg rounded-sm">
@@ -165,7 +165,7 @@ export default function ManagementPage() {
                             </div>
                             <h3 className="text-2xl font-semibold mb-4">Strategic Growth</h3>
                             <p className="text-deep-charcoal/70 mb-6 leading-relaxed">
-                                We don't just "maintain" accounts. We hold <strong>Quarterly Business Reviews (QBRs)</strong> to plan your next 90 days. From "Honeymoon" launches to catalog revitalization, we act as your strategic board members.
+                                We don't just "maintain" accounts. We hold <strong>Quarterly Business Reviews (QBRs)</strong> to plan your next 90 days. From Product Launches to catalog revitalization, we act as your strategic board members.
                             </p>
                             <ul className="space-y-2 text-sm text-deep-charcoal/60 font-mono">
                                 <li className="flex items-center gap-2 px-3 py-2 bg-soft-bg rounded-sm">
@@ -235,7 +235,7 @@ export default function ManagementPage() {
             <section className="py-32 px-6 bg-white text-center">
                 <div className="max-w-3xl mx-auto">
                     <h2 className="text-4xl md:text-6xl font-light mb-8 text-deep-charcoal">
-                        Ready to Install <br /><span className="font-semibold">The Protocol?</span>
+                        Ready to Install <br /><span className="font-semibold">The Solution?</span>
                     </h2>
                     <p className="text-xl text-deep-charcoal/60 mb-12">
                         Stop managing the chaos. Start engineering your growth.
