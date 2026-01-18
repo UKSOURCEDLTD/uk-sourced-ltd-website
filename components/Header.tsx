@@ -13,9 +13,9 @@ export default function Header() {
     const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
 
     const links = [
-        { href: "/wholesale", label: "Wholesale" },
         { href: "/management", label: "Management" },
         { href: "/consulting", label: "Consulting" },
+        { href: "/wholesale", label: "Wholesale" },
 
         { href: "/blog", label: "Blog" },
         { href: "/about", label: "About" },

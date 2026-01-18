@@ -155,7 +155,7 @@ export default function AboutPage() {
                         <div className="absolute left-1/2 top-0 bottom-0 w-[1px] dna-line -translate-x-1/2 hidden md:block"></div>
                         <div className="relative grid grid-cols-1 md:grid-cols-2 gap-12 mb-32">
                             <div className="md:text-right">
-                                <div className="font-mono text-3xl text-desaturated-teal mb-2">2018</div>
+                                <div className="font-mono text-3xl text-desaturated-teal mb-2">2019</div>
                                 <div className="data-label opacity-40">Founded</div>
                             </div>
                             <div className="md:pl-12">

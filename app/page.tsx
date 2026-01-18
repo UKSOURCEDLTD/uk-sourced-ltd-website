@@ -70,7 +70,7 @@ export default function Home() {
               <div className="space-y-1">
                 <div className="data-label text-[10px]">Trusted Partner</div>
                 <div className="text-xs font-mono opacity-50">
-                  Since 2018
+                  Since 2019
                 </div>
               </div>
               <div className="h-12 w-[1px] bg-desaturated-teal/30"></div>
