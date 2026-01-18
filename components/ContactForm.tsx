@@ -19,12 +19,27 @@ export default function ContactForm() {
         e.preventDefault();
         setIsSubmitting(true);
 
-        // Simulate network request
-        await new Promise((resolve) => setTimeout(resolve, 1500));
+        try {
+            const response = await fetch('/api/leads', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formState),
+            });
 
-        console.log("Form Submitted:", formState);
-        setIsSubmitting(false);
-        setIsSuccess(true);
+            if (!response.ok) {
+                throw new Error('Failed to submit form');
+            }
+
+            console.log("Form Submitted:", formState);
+            setIsSuccess(true);
+        } catch (error) {
+            console.error("Submission error:", error);
+            alert("Failed to send message. Please try again.");
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     const handleChange = (
@@ -95,8 +110,8 @@ export default function ContactForm() {
                                 London HQ
                             </h4>
                             <p className="text-deep-charcoal/60">
-                                123 Business District <br />
-                                London, UK
+                                International House, Spring Hill Rd <br />
+                                Burnley, BB11 2LQ
                             </p>
                         </div>
                         <div className="border-l-2 border-border-subtle pl-6">
@@ -104,8 +119,8 @@ export default function ContactForm() {
                                 Direct Contact
                             </h4>
                             <p className="text-deep-charcoal/60">
-                                hello@uksourced.co.uk <br />
-                                +44 (0) 20 1234 5678
+                                enquiries@uksourcedltd.com <br />
+                                01282 455697
                             </p>
                         </div>
                     </div>

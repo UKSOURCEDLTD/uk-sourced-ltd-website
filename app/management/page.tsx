@@ -337,11 +337,11 @@ export default function ManagementPage() {
                             <div className="space-y-12">
                                 <div className="border-l-2 border-desaturated-teal pl-10 group">
                                     <div className="data-label mb-3 opacity-60">Email Us</div>
-                                    <div className="text-2xl font-medium text-deep-charcoal hover:text-desaturated-teal transition-colors cursor-pointer font-heading">partnerships@uksourced.ltd</div>
+                                    <div className="text-2xl font-medium text-deep-charcoal hover:text-desaturated-teal transition-colors cursor-pointer font-heading">enquiries@uksourcedltd.com</div>
                                 </div>
                                 <div className="border-l-2 border-border-subtle pl-10">
                                     <div className="data-label mb-3 opacity-60">Headquarters</div>
-                                    <div className="text-2xl font-medium text-deep-charcoal/80 font-heading">London, United Kingdom</div>
+                                    <div className="text-2xl font-medium text-deep-charcoal/80 font-heading">Burnley, United Kingdom</div>
                                 </div>
                             </div>
                         </div>

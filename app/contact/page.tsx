@@ -2,8 +2,76 @@
 "use client";
 
 import { useState } from "react";
-import { submitContactForm } from "@/app/actions/contact";
 import clsx from "clsx";
+import { CheckCircle2 } from "lucide-react";
+
+function ContactFormInner() {
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [isSuccess, setIsSuccess] = useState(false);
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+
+        const formData = new FormData(e.currentTarget);
+        const data = Object.fromEntries(formData.entries());
+
+        try {
+            const response = await fetch('/api/leads', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data),
+            });
+
+            if (!response.ok) throw new Error('Failed');
+            setIsSuccess(true);
+        } catch (error) {
+            console.error(error);
+            alert("Failed to submit. Please try again.");
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+
+    if (isSuccess) {
+        return (
+            <div className="text-center py-12">
+                <CheckCircle2 className="w-16 h-16 text-desaturated-teal mx-auto mb-6" />
+                <h3 className="text-2xl font-semibold mb-4 text-deep-charcoal">Application Received</h3>
+                <p className="text-deep-charcoal/70">Our team will review your details and be in touch shortly.</p>
+            </div>
+        );
+    }
+
+    return (
+        <form onSubmit={handleSubmit} className="space-y-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="relative group">
+                    <label className="text-[10px] font-mono uppercase tracking-widest text-deep-charcoal/60 mb-2 block group-focus-within:text-desaturated-teal transition-colors">Full Name</label>
+                    <input name="name" className="w-full bg-soft-bg/50 border border-border-subtle focus:border-desaturated-teal focus:ring-1 focus:ring-desaturated-teal p-4 text-sm font-medium text-deep-charcoal placeholder:text-deep-charcoal/30 transition-all rounded-sm" placeholder="John Doe" type="text" required />
+                </div>
+                <div className="relative group">
+                    <label className="text-[10px] font-mono uppercase tracking-widest text-deep-charcoal/60 mb-2 block group-focus-within:text-desaturated-teal transition-colors">Email Address</label>
+                    <input name="email" className="w-full bg-soft-bg/50 border border-border-subtle focus:border-desaturated-teal focus:ring-1 focus:ring-desaturated-teal p-4 text-sm font-medium text-deep-charcoal placeholder:text-deep-charcoal/30 transition-all rounded-sm" placeholder="john@company.com" type="email" required />
+                </div>
+            </div>
+            <div className="relative group">
+                <label className="text-[10px] font-mono uppercase tracking-widest text-deep-charcoal/60 mb-2 block group-focus-within:text-desaturated-teal transition-colors">Storefront URL</label>
+                <input name="storefrontUrl" className="w-full bg-soft-bg/50 border border-border-subtle focus:border-desaturated-teal focus:ring-1 focus:ring-desaturated-teal p-4 text-sm font-medium text-deep-charcoal placeholder:text-deep-charcoal/30 transition-all rounded-sm" placeholder="amazon.com/shops/your-store" type="text" />
+            </div>
+            <div className="relative group">
+                <label className="text-[10px] font-mono uppercase tracking-widest text-deep-charcoal/60 mb-2 block group-focus-within:text-desaturated-teal transition-colors">Business Goals</label>
+                <textarea name="projectDetails" className="w-full bg-soft-bg/50 border border-border-subtle focus:border-desaturated-teal focus:ring-1 focus:ring-desaturated-teal p-4 text-sm font-medium text-deep-charcoal placeholder:text-deep-charcoal/30 transition-all resize-none rounded-sm leading-relaxed" placeholder="Briefly describe your current volume and what you are looking to achieve..." rows={4}></textarea>
+            </div>
+            <button type="submit" disabled={isSubmitting} className="w-full bg-desaturated-teal text-white py-5 text-xs font-bold tracking-[0.25em] uppercase hover:bg-deep-charcoal transition-all shadow-lg shadow-desaturated-teal/20 rounded-sm mt-4 disabled:opacity-50">
+                {isSubmitting ? 'Submitting...' : 'Submit Application'}
+            </button>
+            <p className="text-[9px] font-mono text-center text-deep-charcoal/40 uppercase tracking-widest mt-6">
+                Protected by 256-bit SSL Encryption
+            </p>
+        </form>
+    );
+}
 
 export default function ContactPage() {
     const [openAccordion, setOpenAccordion] = useState<number | null>(null);
@@ -65,16 +133,16 @@ export default function ContactPage() {
                                 <div className="space-y-4">
                                     <span className="data-label">Headquarters</span>
                                     <p className="font-mono text-sm leading-relaxed text-deep-charcoal">
-                                        LEVEL 42, CANARY WHARF<br />
-                                        LONDON, E14 5AB<br />
-                                        UNITED KINGDOM
+                                        INTERNATIONAL HOUSE<br />
+                                        SPRING HILL ROAD<br />
+                                        BURNLEY, BB11 2LQ
                                     </p>
                                 </div>
                                 <div className="space-y-4">
                                     <span className="data-label">Direct Lines</span>
                                     <p className="font-mono text-sm leading-relaxed text-deep-charcoal">
-                                        +44 (0) 20 3884 1200<br />
-                                        HELLO@UKSOURCED.LTD
+                                        01282 455697<br />
+                                        ENQUIRIES@UKSOURCEDLTD.COM
                                     </p>
                                 </div>
                             </div>
@@ -88,32 +156,9 @@ export default function ContactPage() {
                                     Fill out the form below to begin. Our team will review your current Amazon footprint and reach out within 24 hours.
                                 </p>
                             </div>
-                            <form action={submitContactForm} className="space-y-10">
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                    <div className="relative group">
-                                        <label className="text-[10px] font-mono uppercase tracking-widest text-deep-charcoal/60 mb-2 block group-focus-within:text-desaturated-teal transition-colors">Full Name</label>
-                                        <input name="name" className="w-full bg-soft-bg/50 border border-border-subtle focus:border-desaturated-teal focus:ring-1 focus:ring-desaturated-teal p-4 text-sm font-medium text-deep-charcoal placeholder:text-deep-charcoal/30 transition-all rounded-sm" placeholder="John Doe" type="text" required />
-                                    </div>
-                                    <div className="relative group">
-                                        <label className="text-[10px] font-mono uppercase tracking-widest text-deep-charcoal/60 mb-2 block group-focus-within:text-desaturated-teal transition-colors">Email Address</label>
-                                        <input name="email" className="w-full bg-soft-bg/50 border border-border-subtle focus:border-desaturated-teal focus:ring-1 focus:ring-desaturated-teal p-4 text-sm font-medium text-deep-charcoal placeholder:text-deep-charcoal/30 transition-all rounded-sm" placeholder="john@company.com" type="email" required />
-                                    </div>
-                                </div>
-                                <div className="relative group">
-                                    <label className="text-[10px] font-mono uppercase tracking-widest text-deep-charcoal/60 mb-2 block group-focus-within:text-desaturated-teal transition-colors">Storefront URL</label>
-                                    <input name="storefrontUrl" className="w-full bg-soft-bg/50 border border-border-subtle focus:border-desaturated-teal focus:ring-1 focus:ring-desaturated-teal p-4 text-sm font-medium text-deep-charcoal placeholder:text-deep-charcoal/30 transition-all rounded-sm" placeholder="amazon.com/shops/your-store" type="text" />
-                                </div>
-                                <div className="relative group">
-                                    <label className="text-[10px] font-mono uppercase tracking-widest text-deep-charcoal/60 mb-2 block group-focus-within:text-desaturated-teal transition-colors">Business Goals</label>
-                                    <textarea name="projectDetails" className="w-full bg-soft-bg/50 border border-border-subtle focus:border-desaturated-teal focus:ring-1 focus:ring-desaturated-teal p-4 text-sm font-medium text-deep-charcoal placeholder:text-deep-charcoal/30 transition-all resize-none rounded-sm leading-relaxed" placeholder="Briefly describe your current volume and what you are looking to achieve..." rows={4}></textarea>
-                                </div>
-                                <button type="submit" className="w-full bg-desaturated-teal text-white py-5 text-xs font-bold tracking-[0.25em] uppercase hover:bg-deep-charcoal transition-all shadow-lg shadow-desaturated-teal/20 rounded-sm mt-4">
-                                    Submit Application
-                                </button>
-                                <p className="text-[9px] font-mono text-center text-deep-charcoal/40 uppercase tracking-widest mt-6">
-                                    Protected by 256-bit SSL Encryption
-                                </p>
-                            </form>
+
+                            {/* Client-side form submission to match standard pattern */}
+                            <ContactFormInner />
                         </div>
                     </div>
                 </section>

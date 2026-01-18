@@ -263,7 +263,7 @@ export default function BlogEditor({ initialData, isEditing = false }: BlogEdito
                                 ${!formData.featuredImage ? 'flex items-center justify-center bg-soft-bg' : ''}
                             `}
                         >
-                            {formData.featuredImage ? (
+                            {formData.featuredImage && (formData.featuredImage.startsWith('http') || formData.featuredImage.startsWith('/')) ? (
                                 <>
                                     <Image
                                         src={formData.featuredImage}

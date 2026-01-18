@@ -21,25 +21,38 @@ export default function BlogsPage() {
     const [posts, setPosts] = useState<BlogPost[]>([]);
     const [loading, setLoading] = useState(true);
 
+    const [mounted, setMounted] = useState(false);
+
     useEffect(() => {
+        setMounted(true);
         fetchPosts();
     }, []);
 
-    const fetchPosts = async () => {
+    if (!mounted) return null;
+
+    async function fetchPosts() {
         try {
             const q = query(collection(db, 'blog_posts'), orderBy('createdAt', 'desc'));
             const querySnapshot = await getDocs(q);
-            const loadedPosts = querySnapshot.docs.map(doc => ({
-                id: doc.id,
-                ...doc.data()
-            })) as BlogPost[];
+            const loadedPosts = querySnapshot.docs.map(doc => {
+                const data = doc.data();
+                return {
+                    id: doc.id,
+                    title: typeof data.title === 'string' ? data.title : 'Untitled Post',
+                    status: (['draft', 'published'].includes(data.status) ? data.status : 'draft') as 'draft' | 'published',
+                    category: typeof data.category === 'string' ? data.category : 'Uncategorized',
+                    createdAt: data.createdAt,
+                    featuredImage: typeof data.featuredImage === 'string' ? data.featuredImage : undefined,
+                    ...data
+                };
+            }) as BlogPost[];
             setPosts(loadedPosts);
         } catch (error) {
             console.error("Error fetching posts:", error);
         } finally {
             setLoading(false);
         }
-    };
+    }
 
     const handleDelete = async (id: string) => {
         if (!window.confirm("Are you sure you want to delete this post?")) return;
@@ -112,7 +125,7 @@ export default function BlogsPage() {
                                         <td className="px-6 py-4">
                                             <div className="flex items-center gap-4">
                                                 <div className="relative w-12 h-12 rounded bg-soft-bg border border-border-subtle overflow-hidden flex-shrink-0">
-                                                    {post.featuredImage ? (
+                                                    {post.featuredImage && (post.featuredImage.startsWith('http') || post.featuredImage.startsWith('/')) ? (
                                                         <Image
                                                             src={post.featuredImage}
                                                             alt=""
@@ -143,9 +156,16 @@ export default function BlogsPage() {
                                         </td>
                                         <td className="px-6 py-4">
                                             <span className="text-sm font-mono text-deep-charcoal/40">
-                                                {post.createdAt?.seconds
-                                                    ? new Date(post.createdAt.seconds * 1000).toLocaleDateString()
-                                                    : '—'}
+                                                {(() => {
+                                                    try {
+                                                        if (post.createdAt?.seconds) {
+                                                            return new Date(post.createdAt.seconds * 1000).toLocaleDateString();
+                                                        }
+                                                        return '—';
+                                                    } catch (e) {
+                                                        return '—';
+                                                    }
+                                                })()}
                                             </span>
                                         </td>
                                         <td className="px-6 py-4 text-right">
