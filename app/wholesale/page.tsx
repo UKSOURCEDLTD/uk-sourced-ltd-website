@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Factory, Handshake, Package, User } from "lucide-react";
 
 export default function WholesalePage() {
     return (
@@ -14,14 +14,14 @@ export default function WholesalePage() {
                             <span className="font-semibold text-deep-charcoal">Globally</span>
                         </h1>
                         <p className="text-lg text-deep-charcoal/80 mb-10 max-w-xl leading-relaxed">
-                            We buy your stock <strong>upfront for cash</strong>. You get immediate capital; we take the global risk. Dominate Amazon UK, USA, and EU while unlocking TikTok Shop—all without waiting for payouts.
+                            We buy your stock <strong>upfront for cash</strong>. You get immediate capital; we handle the global complexity. Seamlessly expand across Amazon UK, USA, and EU while unlocking TikTok Shop—all without waiting for payouts.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
                             <Link
                                 href="/contact"
                                 className="inline-flex justify-center items-center px-8 py-4 bg-deep-charcoal text-white text-xs font-bold font-mono tracking-widest uppercase hover:bg-desaturated-teal transition-colors"
                             >
-                                Get Cash Offer
+                                Start Retail Partnership
                             </Link>
                             <Link
                                 href="#process"
@@ -33,30 +33,62 @@ export default function WholesalePage() {
                     </div>
 
                     <div className="bg-soft-bg p-12 md:p-24 flex items-center justify-center relative overflow-hidden">
-                        {/* Interactive Cash Flow Visual */}
-                        <div className="w-full max-w-md relative z-10">
-                            <div className="bg-white p-8 shadow-2xl shadow-deep-charcoal/5 border border-border-subtle space-y-6">
-                                <div className="flex justify-between items-center border-b border-border-subtle pb-4">
-                                    <span className="text-xs font-mono uppercase text-deep-charcoal/50">Your Cash Flow</span>
-                                    <span className="text-desaturated-teal font-bold">+ Immediate</span>
+                        {/* Stock Flow Visual */}
+                        <div className="w-full max-w-sm space-y-8 relative z-10">
+                            {/* Step 1 */}
+                            <div className="flex items-center gap-6 group">
+                                <div className="w-16 h-16 bg-white border border-border-subtle flex items-center justify-center text-deep-charcoal shadow-sm group-hover:border-desaturated-teal transition-colors">
+                                    <Factory className="w-8 h-8 opacity-80" />
                                 </div>
-                                <div className="space-y-2">
-                                    <div className="flex justify-between text-sm">
-                                        <span className="text-deep-charcoal/70">Inventory Value</span>
-                                        <span className="font-mono font-bold">£50,000+</span>
-                                    </div>
-                                    <div className="w-full h-2 bg-soft-bg rounded-full overflow-hidden">
-                                        <div className="h-full bg-deep-charcoal w-3/4"></div>
-                                    </div>
+                                <div>
+                                    <div className="text-xs font-mono uppercase text-deep-charcoal/50 mb-1">Step 01</div>
+                                    <h3 className="font-semibold text-deep-charcoal">Your Brand</h3>
+                                    <p className="text-sm text-deep-charcoal/60">Manufacturing & Product Development</p>
                                 </div>
-                                <div className="space-y-2">
-                                    <div className="flex justify-between text-sm">
-                                        <span className="text-deep-charcoal/70">Risk Transfer</span>
-                                        <span className="font-mono font-bold">100% to Us</span>
-                                    </div>
-                                    <div className="w-full h-2 bg-soft-bg rounded-full overflow-hidden">
-                                        <div className="h-full bg-desaturated-teal w-full"></div>
-                                    </div>
+                            </div>
+
+                            {/* Connector */}
+                            <div className="w-px h-8 bg-border-subtle ml-8"></div>
+
+                            {/* Step 2 */}
+                            <div className="flex items-center gap-6 group">
+                                <div className="w-16 h-16 bg-deep-charcoal text-white flex items-center justify-center shadow-lg shadow-deep-charcoal/20">
+                                    <Handshake className="w-8 h-8" />
+                                </div>
+                                <div>
+                                    <div className="text-xs font-mono uppercase text-deep-charcoal/50 mb-1">Step 02</div>
+                                    <h3 className="font-bold text-desaturated-teal">UK Sourced Ltd</h3>
+                                    <p className="text-sm text-deep-charcoal/60">We buy stock upfront & handle logistics</p>
+                                </div>
+                            </div>
+
+                            {/* Connector */}
+                            <div className="w-px h-8 bg-border-subtle ml-8"></div>
+
+                            {/* Step 3 */}
+                            <div className="flex items-center gap-6 group">
+                                <div className="w-16 h-16 bg-white border border-border-subtle flex items-center justify-center text-deep-charcoal shadow-sm group-hover:border-desaturated-teal transition-colors">
+                                    <Package className="w-8 h-8 opacity-80" />
+                                </div>
+                                <div>
+                                    <div className="text-xs font-mono uppercase text-deep-charcoal/50 mb-1">Step 03</div>
+                                    <h3 className="font-semibold text-deep-charcoal">Amazon FBA</h3>
+                                    <p className="text-sm text-deep-charcoal/60">Prime-eligible global fulfillment</p>
+                                </div>
+                            </div>
+
+                            {/* Connector */}
+                            <div className="w-px h-8 bg-border-subtle ml-8"></div>
+
+                            {/* Step 4 */}
+                            <div className="flex items-center gap-6 group">
+                                <div className="w-16 h-16 bg-white border border-border-subtle flex items-center justify-center text-deep-charcoal shadow-sm group-hover:border-desaturated-teal transition-colors">
+                                    <User className="w-8 h-8 opacity-80" />
+                                </div>
+                                <div>
+                                    <div className="text-xs font-mono uppercase text-deep-charcoal/50 mb-1">Step 04</div>
+                                    <h3 className="font-semibold text-deep-charcoal">Happy Customer</h3>
+                                    <p className="text-sm text-deep-charcoal/60">Fast delivery & 5-star service</p>
                                 </div>
                             </div>
                         </div>
@@ -69,72 +101,97 @@ export default function WholesalePage() {
                 <section className="p-12 md:p-24 bg-white border-b border-border-subtle">
                     <div className="text-center max-w-2xl mx-auto mb-16">
                         <h2 className="text-3xl font-light mb-4">Why Brands Partner With Us</h2>
-                        <p className="text-deep-charcoal/60">We remove the bottlenecks of traditional distribution.</p>
+                        <p className="text-deep-charcoal/60">Building long-term value through trust and operational excellence.</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                         <div className="p-8 bg-soft-bg border border-border-subtle text-center group hover:border-desaturated-teal transition-colors">
-                            <div className="text-4xl mb-6">💷</div>
-                            <h3 className="text-lg font-semibold mb-3">Instant Cash Flow</h3>
-                            <p className="text-sm text-deep-charcoal/70 leading-relaxed">
-                                Unlock capital trapped in inventory. We buy upfront, giving you the resources to invest in R&D and marketing immediately.
-                            </p>
-                        </div>
-                        <div className="p-8 bg-soft-bg border border-border-subtle text-center group hover:border-desaturated-teal transition-colors">
                             <div className="text-4xl mb-6">🛡️</div>
-                            <h3 className="text-lg font-semibold mb-3">Zero Risk</h3>
+                            <h3 className="text-lg font-semibold mb-3">Brand Integrity & MAP</h3>
                             <p className="text-sm text-deep-charcoal/70 leading-relaxed">
-                                No consignment. No returns. Once we buy it, the risk is 100% ours. You get paid regardless of how fast we sell.
+                                We value your brand equity. We rigorously adhere to MAP policies and pricing structures, ensuring your brand's premium positioning is protected across every marketplace.
                             </p>
                         </div>
                         <div className="p-8 bg-soft-bg border border-border-subtle text-center group hover:border-desaturated-teal transition-colors">
-                            <div className="text-4xl mb-6">🌍</div>
-                            <h3 className="text-lg font-semibold mb-3">Global Compliance</h3>
+                            <div className="text-4xl mb-6">🤝</div>
+                            <h3 className="text-lg font-semibold mb-3">True Partnership</h3>
                             <p className="text-sm text-deep-charcoal/70 leading-relaxed">
-                                VAT, customs, and international logistics are headaches we handle. Launch in the US & EU without the paperwork nightmare.
+                                Beyond just a buyer, we are your strategic partner. We prioritize open communication, reliability, and trust, acting as a dedicated extension of your sales team.
+                            </p>
+                        </div>
+                        <div className="p-8 bg-soft-bg border border-border-subtle text-center group hover:border-desaturated-teal transition-colors">
+                            <div className="text-4xl mb-6">🌟</div>
+                            <h3 className="text-lg font-semibold mb-3">Premier Representation</h3>
+                            <p className="text-sm text-deep-charcoal/70 leading-relaxed">
+                                We represent your products with the highest standards. From optimized listings to flawless fulfillment, we ensure your customers experience the reliability they expect from your brand.
                             </p>
                         </div>
                     </div>
                 </section>
 
                 {/* The Process Section */}
-                <section id="process" className="p-12 md:p-24 bg-deep-charcoal text-white relative overflow-hidden">
-                    <div className="absolute inset-0 grid-lines opacity-10"></div>
-                    <div className="relative z-10 max-w-4xl mx-auto">
-                        <div className="text-center mb-16">
+                <section id="process" className="py-16 md:py-20 bg-soft-bg relative overflow-hidden text-deep-charcoal border-b border-border-subtle">
+                    <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+                        <div className="text-center mb-12">
                             <h2 className="text-3xl font-light mb-4">The Partnership Process</h2>
-                            <p className="text-white/60">Simple, transparent, and fast.</p>
+                            <p className="text-deep-charcoal/60 max-w-2xl mx-auto">
+                                A streamlined, data-driven pathway to global distribution. We handle the complexity so you can focus on product innovation.
+                            </p>
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+                        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
                             {/* Connector Line (Desktop) */}
-                            <div className="hidden md:block absolute top-12 left-0 right-0 h-px bg-white/20 -z-10"></div>
+                            <div className="hidden md:block absolute top-8 left-0 right-0 h-px bg-border-subtle z-0"></div>
 
-                            <div className="relative">
-                                <div className="w-24 h-24 bg-deep-charcoal border border-white/20 mx-auto flex items-center justify-center text-2xl font-mono mb-6 shadow-xl shadow-black/20">
+                            {/* Step 1 */}
+                            <div className="relative z-10 group">
+                                <div className="w-16 h-16 bg-white border border-border-subtle mx-auto flex items-center justify-center text-xl font-mono mb-6 shadow-sm group-hover:border-desaturated-teal group-hover:text-desaturated-teal transition-all duration-300 rounded-full">
                                     01
                                 </div>
-                                <h4 className="text-lg font-semibold text-center mb-2">Audit & Analyze</h4>
-                                <p className="text-sm text-center text-white/60 leading-relaxed">
-                                    We analyze your brand's potential across Amazon UK, US, and EU markets.
-                                </p>
+                                <div className="bg-white p-6 border border-border-subtle h-full group-hover:shadow-md transition-all duration-300">
+                                    <h4 className="text-lg font-semibold text-center mb-3">Market Investigation</h4>
+                                    <p className="text-xs text-deep-charcoal/70 leading-relaxed text-center">
+                                        We don't guess. We use advanced analytics to identify your brand's true potential in untapped markets. We assess competition, demand, and profitability to build a data-backed roadmap for expansion.
+                                    </p>
+                                </div>
                             </div>
-                            <div className="relative">
-                                <div className="w-24 h-24 bg-desaturated-teal border border-desaturated-teal mx-auto flex items-center justify-center text-2xl font-mono mb-6 shadow-xl shadow-desaturated-teal/20">
+
+                            {/* Step 2 */}
+                            <div className="relative z-10 group">
+                                <div className="w-16 h-16 bg-deep-charcoal text-white mx-auto flex items-center justify-center text-xl font-mono mb-6 shadow-lg shadow-deep-charcoal/20 transition-all duration-300 rounded-full">
                                     02
                                 </div>
-                                <h4 className="text-lg font-semibold text-center mb-2">Cash Offer</h4>
-                                <p className="text-sm text-center text-white/60 leading-relaxed">
-                                    We present a purchase order. Validated stock is paid for upfront via bank transfer.
-                                </p>
+                                <div className="bg-white p-6 border border-border-subtle h-full group-hover:shadow-md transition-all duration-300">
+                                    <h4 className="text-lg font-semibold text-center mb-3">Planning & Purchase</h4>
+                                    <p className="text-xs text-deep-charcoal/70 leading-relaxed text-center">
+                                        Consistency is key. We forecast demand with precision to place accurate, recurring orders. You receive a formal Purchase Order and 100% upfront payment, eliminating your cash flow worries.
+                                    </p>
+                                </div>
                             </div>
-                            <div className="relative">
-                                <div className="w-24 h-24 bg-deep-charcoal border border-white/20 mx-auto flex items-center justify-center text-2xl font-mono mb-6 shadow-xl shadow-black/20">
+
+                            {/* Step 3 */}
+                            <div className="relative z-10 group">
+                                <div className="w-16 h-16 bg-white border border-border-subtle mx-auto flex items-center justify-center text-xl font-mono mb-6 shadow-sm group-hover:border-desaturated-teal group-hover:text-desaturated-teal transition-all duration-300 rounded-full">
                                     03
                                 </div>
-                                <h4 className="text-lg font-semibold text-center mb-2">Global Launch</h4>
-                                <p className="text-sm text-center text-white/60 leading-relaxed">
-                                    Stock flows to our FBA centers worldwide. We optimize listings and drive sales.
-                                </p>
+                                <div className="bg-white p-6 border border-border-subtle h-full group-hover:shadow-md transition-all duration-300">
+                                    <h4 className="text-lg font-semibold text-center mb-3">Launch</h4>
+                                    <p className="text-xs text-deep-charcoal/70 leading-relaxed text-center">
+                                        We execute a precision rollout in our planned target markets. We handle all logistics to ensure stock availability, while our team optimizes listings and deploys targeted strategies to drive immediate sales velocity.
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* Step 4 */}
+                            <div className="relative z-10 group">
+                                <div className="w-16 h-16 bg-white border border-border-subtle mx-auto flex items-center justify-center text-xl font-mono mb-6 shadow-sm group-hover:border-desaturated-teal group-hover:text-desaturated-teal transition-all duration-300 rounded-full">
+                                    04
+                                </div>
+                                <div className="bg-white p-6 border border-border-subtle h-full group-hover:shadow-md transition-all duration-300">
+                                    <h4 className="text-lg font-semibold text-center mb-3">Continuous Restock</h4>
+                                    <p className="text-xs text-deep-charcoal/70 leading-relaxed text-center">
+                                        Growth that compounds. As sales velocity increases, we proactively manage inventory levels and place recurring bulk orders. We prevent stockouts so your revenue stream never stops flowing.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
