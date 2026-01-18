@@ -1,11 +1,11 @@
-
 "use client";
 
 import DynamicImage from "@/components/DynamicImage";
+import { Search, TrendingUp, RefreshCw, BarChart3, FileSearch, Target, Settings, Briefcase } from "lucide-react";
 
 export default function ConsultingPage() {
     return (
-        <div className="grid-lines min-h-screen">
+        <div className="grid-lines min-h-screen font-sans text-deep-charcoal selection:bg-desaturated-teal/20">
             <main>
                 <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden border-b border-border-subtle">
                     <div className="max-w-screen-2xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center z-10">
@@ -23,7 +23,7 @@ export default function ConsultingPage() {
                             </p>
                             <div className="flex items-center gap-8 pt-6">
                                 <a className="bg-desaturated-teal text-white px-10 py-5 font-bold uppercase tracking-widest text-[11px] rounded-sm hover:bg-deep-charcoal transition-all" href="#packages">View Packages</a>
-                                <a className="text-deep-charcoal font-bold uppercase tracking-widest text-[11px] flex items-center gap-2 group" href="#framework">
+                                <a className="text-deep-charcoal font-bold uppercase tracking-widest text-[11px] flex items-center gap-2 group" href="#interventions">
                                     Our Framework
                                     <span className="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
                                 </a>
@@ -54,87 +54,155 @@ export default function ConsultingPage() {
                     </div>
                 </section>
 
-                <section className="py-32 px-8 max-w-screen-2xl mx-auto" id="framework">
+                {/* Strategic Interventions Section (Formerly Framework) */}
+                <section className="py-32 px-8 max-w-screen-2xl mx-auto" id="interventions">
                     <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
                         <div className="max-w-2xl">
-                            <div className="data-label text-desaturated-teal mb-4">Our Approach</div>
-                            <h2 className="text-5xl font-semibold mb-6">Core Services</h2>
-                            <p className="text-lg">Specialized support for high-growth entities requiring immediate strategic clarity.</p>
+                            <div className="data-label text-desaturated-teal mb-4">SOP-Driven Strategy</div>
+                            <h2 className="text-5xl font-semibold mb-6">Strategic Interventions</h2>
+                            <p className="text-lg text-deep-charcoal/70">We don't offer generic "advice." We deploy specific, battle-tested protocols to solve critical growth blockers.</p>
                         </div>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-[280px]">
-                        <div className="bento-item md:col-span-2 md:row-span-2 bg-white">
-                            <span className="material-symbols-outlined text-desaturated-teal text-5xl mb-12">language</span>
-                            <div>
-                                <h3 className="text-2xl font-bold mb-4">Market Entry Strategy</h3>
-                                <p className="mb-8">A comprehensive roadmap for international expansion, including fiscal setup, compliance, and localized positioning.</p>
-                                <div className="flex gap-4">
-                                    <span className="text-[10px] font-mono border border-border-subtle px-3 py-1 rounded-full">Europe</span>
-                                    <span className="text-[10px] font-mono border border-border-subtle px-3 py-1 rounded-full">North America</span>
-                                </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        {/* Intervention 1: Honeymoon Strategy */}
+                        <div className="bg-white border border-border-subtle p-10 hover:border-desaturated-teal transition-all group">
+                            <div className="w-14 h-14 bg-desaturated-teal/10 rounded-lg flex items-center justify-center mb-8 text-desaturated-teal group-hover:bg-desaturated-teal group-hover:text-white transition-colors">
+                                <TrendingUp className="w-7 h-7" />
                             </div>
+                            <h3 className="text-xl font-bold mb-3">The "Honeymoon" Protocol</h3>
+                            <div className="text-[10px] font-mono text-desaturated-teal mb-4 uppercase tracking-widest">SOP 2.1: New Product Launch</div>
+                            <p className="text-deep-charcoal/60 mb-6 text-sm leading-relaxed">
+                                A 14-day pre-launch sequence designed to maximize algorithm ranking. Includes Reverse ASIN research, Vine enrollment, and aggressive Exact Match PPC to spike initial velocity.
+                            </p>
+                            <ul className="space-y-2">
+                                <li className="flex items-center gap-2 text-xs font-mono text-deep-charcoal/80">
+                                    <span className="w-1.5 h-1.5 bg-desaturated-teal rounded-full"></span>
+                                    VINE REVIEW ENROLLMENT
+                                </li>
+                                <li className="flex items-center gap-2 text-xs font-mono text-deep-charcoal/80">
+                                    <span className="w-1.5 h-1.5 bg-desaturated-teal rounded-full"></span>
+                                    KEYWORD RANKING SPIKES
+                                </li>
+                            </ul>
                         </div>
-                        <div className="bento-item">
-                            <span className="material-symbols-outlined text-desaturated-teal text-4xl">analytics</span>
-                            <div>
-                                <h3 className="text-xl font-bold mb-2">Profitability Audits</h3>
-                                <p className="text-sm">Granular analysis of your costs and fees to identify and recover lost margins.</p>
+
+                        {/* Intervention 2: Profit Recovery */}
+                        <div className="bg-white border border-border-subtle p-10 hover:border-desaturated-teal transition-all group">
+                            <div className="w-14 h-14 bg-desaturated-teal/10 rounded-lg flex items-center justify-center mb-8 text-desaturated-teal group-hover:bg-desaturated-teal group-hover:text-white transition-colors">
+                                <BarChart3 className="w-7 h-7" />
                             </div>
+                            <h3 className="text-xl font-bold mb-3">Profit Recovery Audit</h3>
+                            <div className="text-[10px] font-mono text-desaturated-teal mb-4 uppercase tracking-widest">SOP 2.3: The "Bleeder" Cut</div>
+                            <p className="text-deep-charcoal/60 mb-6 text-sm leading-relaxed">
+                                We categorize your catalog into "Winners" and "Bleeders." Our forensic audit identifies wasted ad spend and storage fees, ruthlessly cutting costs to restore net margin.
+                            </p>
+                            <ul className="space-y-2">
+                                <li className="flex items-center gap-2 text-xs font-mono text-deep-charcoal/80">
+                                    <span className="w-1.5 h-1.5 bg-desaturated-teal rounded-full"></span>
+                                    SKU PROFITABILITY ANALYSIS
+                                </li>
+                                <li className="flex items-center gap-2 text-xs font-mono text-deep-charcoal/80">
+                                    <span className="w-1.5 h-1.5 bg-desaturated-teal rounded-full"></span>
+                                    UNPROFITABLE SPEND NEGATION
+                                </li>
+                            </ul>
                         </div>
-                        <div className="bento-item bg-deep-charcoal text-white">
-                            <span className="material-symbols-outlined text-white/40 text-4xl">medical_services</span>
-                            <div>
-                                <h3 className="text-xl font-bold mb-2">Account Health</h3>
-                                <p className="text-sm text-white/60">Rapid response and resolution for listing suspensions and account health issues.</p>
+
+                        {/* Intervention 3: Catalog Rehabilitation */}
+                        <div className="bg-white border border-border-subtle p-10 hover:border-desaturated-teal transition-all group">
+                            <div className="w-14 h-14 bg-desaturated-teal/10 rounded-lg flex items-center justify-center mb-8 text-desaturated-teal group-hover:bg-desaturated-teal group-hover:text-white transition-colors">
+                                <RefreshCw className="w-7 h-7" />
                             </div>
-                        </div>
-                        <div className="bento-item md:col-span-2 bg-soft-bg/50 border-dashed">
-                            <div className="flex justify-between items-start">
-                                <span className="material-symbols-outlined text-desaturated-teal text-4xl">hub</span>
-                                <span className="data-label">Integration: Full</span>
-                            </div>
-                            <div>
-                                <h3 className="text-xl font-bold mb-2">Supply Chain Optimization</h3>
-                                <p className="text-sm">Optimization of your logistics flow to minimize FBA storage fees and maximize inventory throughput.</p>
-                            </div>
+                            <h3 className="text-xl font-bold mb-3">Catalog Rehabilitation</h3>
+                            <div className="text-[10px] font-mono text-desaturated-teal mb-4 uppercase tracking-widest">SOP 2.2: SEO Refresh</div>
+                            <p className="text-deep-charcoal/60 mb-6 text-sm leading-relaxed">
+                                Waking up dormant products. We overhaul images, fix broken variations via Flat Files, and re-index listings with fresh backend keywords to restart organic traffic.
+                            </p>
+                            <ul className="space-y-2">
+                                <li className="flex items-center gap-2 text-xs font-mono text-deep-charcoal/80">
+                                    <span className="w-1.5 h-1.5 bg-desaturated-teal rounded-full"></span>
+                                    FLAT FILE VARIATION FIXES
+                                </li>
+                                <li className="flex items-center gap-2 text-xs font-mono text-deep-charcoal/80">
+                                    <span className="w-1.5 h-1.5 bg-desaturated-teal rounded-full"></span>
+                                    IMAGE STACK OPTIMIZATION
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </section>
 
-                <section className="py-32 bg-white border-y border-border-subtle">
+                {/* The Executive Roadmap (Formerly Process) */}
+                <section className="py-32 bg-soft-bg border-y border-border-subtle">
                     <div className="max-w-screen-2xl mx-auto px-8">
-                        <div className="text-center mb-24">
-                            <div className="data-label mb-4">Our Process</div>
-                            <h2 className="text-4xl font-semibold">The Advisory Process</h2>
-                        </div>
-                        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 relative">
-                            <div className="hidden md:block absolute top-10 left-0 w-full h-[1px] bg-border-subtle -z-0"></div>
-                            <div className="relative z-10 space-y-8 group">
-                                <div className="w-20 h-20 rounded-full bg-white border border-border-subtle flex items-center justify-center text-xl font-mono group-hover:border-desaturated-teal group-hover:text-desaturated-teal transition-all">01</div>
-                                <div>
-                                    <h4 className="text-lg font-bold mb-3">Discovery</h4>
-                                    <p className="text-sm">We analyze your current metrics, infrastructure, and business objectives.</p>
-                                </div>
+                        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+                            <div className="lg:col-span-5 sticky top-32">
+                                <div className="data-label text-desaturated-teal mb-4">The Methodology</div>
+                                <h2 className="text-5xl font-semibold mb-8">The Executive Roadmap</h2>
+                                <p className="text-lg text-deep-charcoal/70 mb-10">
+                                    We don't guess. We follow a strict 4-stage implementation plan to transition your account from "Chaos" to "Protocol."
+                                </p>
+                                <a href="#inquiry" className="inline-flex items-center gap-3 text-xs font-bold uppercase tracking-widest border-b border-deep-charcoal pb-1 hover:text-desaturated-teal hover:border-desaturated-teal transition-colors">
+                                    Start The Process <span className="material-symbols-outlined text-sm">arrow_downward</span>
+                                </a>
                             </div>
-                            <div className="relative z-10 space-y-8 group">
-                                <div className="w-20 h-20 rounded-full bg-white border border-border-subtle flex items-center justify-center text-xl font-mono group-hover:border-desaturated-teal group-hover:text-desaturated-teal transition-all">02</div>
-                                <div>
-                                    <h4 className="text-lg font-bold mb-3">Diagnostic</h4>
-                                    <p className="text-sm">Identification of structural bottlenecks and untapped revenue streams.</p>
+
+                            <div className="lg:col-span-7 space-y-4">
+                                {/* Stage 1 */}
+                                <div className="bg-white p-8 border border-border-subtle flex gap-6 group hover:border-desaturated-teal transition-all">
+                                    <div className="w-12 h-12 bg-soft-bg flex items-center justify-center shrink-0 border border-border-subtle font-mono font-bold text-desaturated-teal/50">01</div>
+                                    <div>
+                                        <div className="flex justify-between items-center mb-2">
+                                            <h4 className="text-xl font-bold">The Forensic Audit</h4>
+                                            <FileSearch className="w-5 h-5 text-deep-charcoal/30" />
+                                        </div>
+                                        <p className="text-deep-charcoal/60 text-sm leading-relaxed">
+                                            We rip apart every campaign, listing, and shipment log. We identify the "silent killers" of your profit margin: hidden fees, suppressed keywords, and bloated bids.
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="relative z-10 space-y-8 group">
-                                <div className="w-20 h-20 rounded-full bg-white border border-border-subtle flex items-center justify-center text-xl font-mono group-hover:border-desaturated-teal group-hover:text-desaturated-teal transition-all">03</div>
-                                <div>
-                                    <h4 className="text-lg font-bold mb-3">Strategy</h4>
-                                    <p className="text-sm">Building a strategic implementation plan with fixed milestones.</p>
+
+                                {/* Stage 2 */}
+                                <div className="bg-white p-8 border border-border-subtle flex gap-6 group hover:border-desaturated-teal transition-all">
+                                    <div className="w-12 h-12 bg-soft-bg flex items-center justify-center shrink-0 border border-border-subtle font-mono font-bold text-desaturated-teal/50">02</div>
+                                    <div>
+                                        <div className="flex justify-between items-center mb-2">
+                                            <h4 className="text-xl font-bold">The 90-Day War Room</h4>
+                                            <Target className="w-5 h-5 text-deep-charcoal/30" />
+                                        </div>
+                                        <p className="text-deep-charcoal/60 text-sm leading-relaxed">
+                                            We define the battle plan. Which products are we defending? Which are we launching? We set hard KPI targets for revenue, TACOS, and Net Margin.
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="relative z-10 space-y-8 group">
-                                <div className="w-20 h-20 rounded-full bg-white border border-border-subtle flex items-center justify-center text-xl font-mono group-hover:border-desaturated-teal group-hover:text-desaturated-teal transition-all">04</div>
-                                <div>
-                                    <h4 className="text-lg font-bold mb-3">Execution</h4>
-                                    <p className="text-sm">Supervised rollout and ongoing performance monitoring.</p>
+
+                                {/* Stage 3 */}
+                                <div className="bg-white p-8 border border-border-subtle flex gap-6 group hover:border-desaturated-teal transition-all">
+                                    <div className="w-12 h-12 bg-soft-bg flex items-center justify-center shrink-0 border border-border-subtle font-mono font-bold text-desaturated-teal/50">03</div>
+                                    <div>
+                                        <div className="flex justify-between items-center mb-2">
+                                            <h4 className="text-xl font-bold">System Installation</h4>
+                                            <Settings className="w-5 h-5 text-deep-charcoal/30" />
+                                        </div>
+                                        <p className="text-deep-charcoal/60 text-sm leading-relaxed">
+                                            We install our SOPs into your business. Governance checks, reporting feedback loops, and inventory forecasting models are deployed to ensure stability.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                {/* Stage 4 */}
+                                <div className="bg-white p-8 border border-border-subtle flex gap-6 group hover:border-desaturated-teal transition-all">
+                                    <div className="w-12 h-12 bg-soft-bg flex items-center justify-center shrink-0 border border-border-subtle font-mono font-bold text-desaturated-teal/50">04</div>
+                                    <div>
+                                        <div className="flex justify-between items-center mb-2">
+                                            <h4 className="text-xl font-bold">Execution & Handover</h4>
+                                            <Briefcase className="w-5 h-5 text-deep-charcoal/30" />
+                                        </div>
+                                        <p className="text-deep-charcoal/60 text-sm leading-relaxed">
+                                            We execute the plan or hand over the keys. You receive a fully optimized machine with a clear operating manual for your internal team.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -200,9 +268,11 @@ export default function ConsultingPage() {
                 <section className="py-32 bg-white border-t border-border-subtle" id="inquiry">
                     <div className="max-w-screen-2xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-24">
                         <div>
-                            <div className="data-label text-desaturated-teal mb-6">Contact Form</div>
-                            <h2 className="text-5xl font-semibold mb-10">Contact Us</h2>
-                            <p className="text-xl mb-14">Our consulting slots are limited to maintain peak performance for existing partners. Brief us on your requirements to begin the vetting process.</p>
+                            <div className="data-label text-desaturated-teal mb-6">Partner Vetting</div>
+                            <h2 className="text-5xl font-semibold mb-10">Start the Vetting Process</h2>
+                            <p className="text-xl mb-14 text-deep-charcoal/70">
+                                We are selective with our partners. We look for brands with strong product-market fit that are ready to adopt a high-performance operational framework.
+                            </p>
                             <div className="p-8 border border-border-subtle space-y-8 bg-soft-bg/50">
                                 <div className="flex items-center gap-6">
                                     <div className="w-12 h-12 bg-white flex items-center justify-center border border-border-subtle">
@@ -210,7 +280,7 @@ export default function ConsultingPage() {
                                     </div>
                                     <div>
                                         <div className="data-label">Availability</div>
-                                        <div className="text-lg font-bold">Open for New Partners</div>
+                                        <div className="text-lg font-bold">Limited Spots for Q1</div>
                                     </div>
                                 </div>
                                 <div className="flex items-center gap-6">
@@ -237,33 +307,20 @@ export default function ConsultingPage() {
                                     </div>
                                 </div>
                                 <div className="space-y-2">
-                                    <label className="data-label !text-[9px]">Service Area</label>
-                                    <select className="w-full bg-white border-border-subtle focus:ring-1 focus:ring-desaturated-teal focus:border-desaturated-teal text-sm py-4 px-4 transition-all appearance-none">
-                                        <option>Market Entry Strategy</option>
-                                        <option>Profitability Audit</option>
-                                        <option>Account Health & Recovery</option>
+                                    <label className="data-label !text-[9px]">Interest</label>
+                                    <select className="w-full bg-white border-border-subtle focus:ring-1 focus:ring-desaturated-teal focus:border-desaturated-teal text-sm py-4 px-4 transition-all appearance-none cursor-pointer">
+                                        <option>Profit Recovery Audit</option>
+                                        <option>New Product Launch (Honeymoon Strategy)</option>
+                                        <option>Catalog Rehabilitation</option>
                                         <option>Full Retainer Inquiry</option>
                                     </select>
                                 </div>
                                 <div className="space-y-2">
-                                    <label className="data-label !text-[9px]">Message</label>
-                                    <textarea className="w-full bg-white border-border-subtle focus:ring-1 focus:ring-desaturated-teal focus:border-desaturated-teal text-sm py-4 px-4 transition-all resize-none" placeholder="How can we help?" rows={4}></textarea>
-                                </div>
-                                <div className="pt-4 border-t border-border-subtle">
-                                    <div className="flex justify-between items-center mb-4">
-                                        <span className="data-label">Preferred Time</span>
-                                        <span className="text-[10px] font-mono opacity-40"></span>
-                                    </div>
-                                    <div className="grid grid-cols-5 gap-2">
-                                        <div className="border border-border-subtle p-3 text-center bg-white text-[10px] font-mono opacity-30">MON</div>
-                                        <div className="border border-desaturated-teal p-3 text-center bg-desaturated-teal/5 text-[10px] font-mono cursor-pointer hover:bg-desaturated-teal/10">TUE</div>
-                                        <div className="border border-border-subtle p-3 text-center bg-white text-[10px] font-mono opacity-30">WED</div>
-                                        <div className="border border-desaturated-teal p-3 text-center bg-desaturated-teal/5 text-[10px] font-mono cursor-pointer hover:bg-desaturated-teal/10">THU</div>
-                                        <div className="border border-desaturated-teal p-3 text-center bg-desaturated-teal/5 text-[10px] font-mono cursor-pointer hover:bg-desaturated-teal/10">FRI</div>
-                                    </div>
+                                    <label className="data-label !text-[9px]">Context</label>
+                                    <textarea className="w-full bg-white border-border-subtle focus:ring-1 focus:ring-desaturated-teal focus:border-desaturated-teal text-sm py-4 px-4 transition-all resize-none" placeholder="Briefly describe your current blockers..." rows={4}></textarea>
                                 </div>
                                 <button className="w-full bg-deep-charcoal text-white font-bold py-6 mt-4 hover:bg-desaturated-teal transition-all uppercase tracking-[0.2em] text-[11px] rounded-sm">
-                                    Send Message
+                                    Submit for Review
                                 </button>
                             </form>
                         </div>
