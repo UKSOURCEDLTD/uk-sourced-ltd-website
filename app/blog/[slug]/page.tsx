@@ -7,6 +7,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Loader2, ArrowLeft, Calendar, User, Tag } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
+import RelatedPosts from '@/components/blog/RelatedPosts';
 
 interface BlogPost {
     id: string;
@@ -154,6 +155,8 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
                     </Link>
                 </div>
             </article>
+
+            {post.id && <RelatedPosts currentPostId={post.id} category={post.category} />}
         </main>
     );
 }
