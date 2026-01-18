@@ -12,19 +12,19 @@ export default function ConsultingPage() {
                         <div className="space-y-10">
                             <div className="data-label flex items-center gap-3">
                                 <span className="w-2 h-2 rounded-full bg-desaturated-teal"></span>
-                                Strategic Consulting
+                                Consultancy Services
                             </div>
                             <h1 className="text-6xl md:text-8xl font-light leading-[1.1]">
-                                Expert Consulting <br />
-                                <span className="font-semibold text-desaturated-teal">for the Amazon Ecosystem</span>
+                                Expert Amazon <br />
+                                <span className="font-semibold text-desaturated-teal">Consultancy</span>
                             </h1>
                             <p className="text-xl max-w-lg">
-                                Navigating high-stakes marketplace dynamics with surgical precision. Our advisory layer provides the architectural blueprint for global account management and distribution dominance.
+                                Strategic guidance for brands looking to scale. We provide the architectural details and roadmap for your Amazon distribution and account management success.
                             </p>
                             <div className="flex items-center gap-8 pt-6">
-                                <a className="bg-desaturated-teal text-white px-10 py-5 font-bold uppercase tracking-widest text-[11px] rounded-sm hover:bg-deep-charcoal transition-all" href="#packages">Engagement Tiers</a>
+                                <a className="bg-desaturated-teal text-white px-10 py-5 font-bold uppercase tracking-widest text-[11px] rounded-sm hover:bg-deep-charcoal transition-all" href="#packages">View Packages</a>
                                 <a className="text-deep-charcoal font-bold uppercase tracking-widest text-[11px] flex items-center gap-2 group" href="#framework">
-                                    The Framework
+                                    Our Framework
                                     <span className="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
                                 </a>
                             </div>
@@ -34,7 +34,7 @@ export default function ConsultingPage() {
                                 <div className="absolute inset-0 bg-gradient-to-tr from-soft-bg to-transparent opacity-50"></div>
                                 <DynamicImage
                                     slot="consulting_network_grid"
-                                    alt="Glassmorphic Network Grid"
+                                    alt="Global Network Grid"
                                     fill
                                     className="object-cover rounded-xl opacity-90 mix-blend-multiply transition-transform duration-1000 group-hover:scale-110"
                                     fallbackSrc="https://lh3.googleusercontent.com/aida-public/AB6AXuBfigwmoRZmNFL23ceYUbc9gUxdKZn9BBCPoTJyzLaXcZykpVU-kb7Iz8e5IYp0yv6aUcStpKuvx_rKqFckfTLm0f0aimyPfbpShz1NcKJgAX621uekZG89h-pKbMQsV_0wQI7wc6x-u3fXBatcxSuRm4Z-n9_NU28iTpM-Hiq_1uNi2IZcQrmbX_6GOW7hAojSsnbGGUlgAa0Bl2_dtBlKGnCkufBRAQv4MQoS00fsXR-TFSpeWLHlF_9uC-xBB0xwD9pKcqzv2myM"
@@ -59,19 +59,18 @@ export default function ConsultingPage() {
                         <div className="max-w-2xl">
                             <div className="data-label text-desaturated-teal mb-4">Our Approach</div>
                             <h2 className="text-5xl font-semibold mb-6">Core Services</h2>
-                            <p className="text-lg">Specialized intervention modules designed for high-growth entities requiring immediate strategic clarity.</p>
+                            <p className="text-lg">Specialized support for high-growth entities requiring immediate strategic clarity.</p>
                         </div>
-
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-[280px]">
                         <div className="bento-item md:col-span-2 md:row-span-2 bg-white">
                             <span className="material-symbols-outlined text-desaturated-teal text-5xl mb-12">language</span>
                             <div>
                                 <h3 className="text-2xl font-bold mb-4">Market Entry Strategy</h3>
-                                <p className="mb-8">Comprehensive roadmap for pan-regional expansion including fiscal setup, compliance, and localized positioning.</p>
+                                <p className="mb-8">A comprehensive roadmap for international expansion, including fiscal setup, compliance, and localized positioning.</p>
                                 <div className="flex gap-4">
-                                    <span className="text-[10px] font-mono border border-border-subtle px-3 py-1 rounded-full">Global_EU</span>
-                                    <span className="text-[10px] font-mono border border-border-subtle px-3 py-1 rounded-full">North_Am</span>
+                                    <span className="text-[10px] font-mono border border-border-subtle px-3 py-1 rounded-full">Europe</span>
+                                    <span className="text-[10px] font-mono border border-border-subtle px-3 py-1 rounded-full">North America</span>
                                 </div>
                             </div>
                         </div>
@@ -79,14 +78,14 @@ export default function ConsultingPage() {
                             <span className="material-symbols-outlined text-desaturated-teal text-4xl">analytics</span>
                             <div>
                                 <h3 className="text-xl font-bold mb-2">Profitability Audits</h3>
-                                <p className="text-sm">Granular COGS and fee structure analysis to recover lost margins.</p>
+                                <p className="text-sm">Granular analysis of your costs and fees to identify and recover lost margins.</p>
                             </div>
                         </div>
                         <div className="bento-item bg-deep-charcoal text-white">
-                            <span className="material-symbols-outlined text-white/40 text-4xl">emergency_home</span>
+                            <span className="material-symbols-outlined text-white/40 text-4xl">medical_services</span>
                             <div>
-                                <h3 className="text-xl font-bold mb-2">Recovery Ops</h3>
-                                <p className="text-sm text-white/60">Rapid response for listing suspensions and account health crises.</p>
+                                <h3 className="text-xl font-bold mb-2">Account Health</h3>
+                                <p className="text-sm text-white/60">Rapid response and resolution for listing suspensions and account health issues.</p>
                             </div>
                         </div>
                         <div className="bento-item md:col-span-2 bg-soft-bg/50 border-dashed">
@@ -96,7 +95,7 @@ export default function ConsultingPage() {
                             </div>
                             <div>
                                 <h3 className="text-xl font-bold mb-2">Supply Chain Optimization</h3>
-                                <p className="text-sm">Structural redesign of your logistics flow to minimize FBA storage friction and maximize throughput.</p>
+                                <p className="text-sm">Optimization of your logistics flow to minimize FBA storage fees and maximize inventory throughput.</p>
                             </div>
                         </div>
                     </div>
@@ -114,7 +113,7 @@ export default function ConsultingPage() {
                                 <div className="w-20 h-20 rounded-full bg-white border border-border-subtle flex items-center justify-center text-xl font-mono group-hover:border-desaturated-teal group-hover:text-desaturated-teal transition-all">01</div>
                                 <div>
                                     <h4 className="text-lg font-bold mb-3">Discovery</h4>
-                                    <p className="text-sm">Deep-dive into current metrics, infrastructure, and 2026 objectives.</p>
+                                    <p className="text-sm">We analyze your current metrics, infrastructure, and business objectives.</p>
                                 </div>
                             </div>
                             <div className="relative z-10 space-y-8 group">
@@ -127,15 +126,15 @@ export default function ConsultingPage() {
                             <div className="relative z-10 space-y-8 group">
                                 <div className="w-20 h-20 rounded-full bg-white border border-border-subtle flex items-center justify-center text-xl font-mono group-hover:border-desaturated-teal group-hover:text-desaturated-teal transition-all">03</div>
                                 <div>
-                                    <h4 className="text-lg font-bold mb-3">Blueprint</h4>
-                                    <p className="text-sm">Architecting the strategic implementation plan with fixed milestones.</p>
+                                    <h4 className="text-lg font-bold mb-3">Strategy</h4>
+                                    <p className="text-sm">Building a strategic implementation plan with fixed milestones.</p>
                                 </div>
                             </div>
                             <div className="relative z-10 space-y-8 group">
                                 <div className="w-20 h-20 rounded-full bg-white border border-border-subtle flex items-center justify-center text-xl font-mono group-hover:border-desaturated-teal group-hover:text-desaturated-teal transition-all">04</div>
                                 <div>
                                     <h4 className="text-lg font-bold mb-3">Execution</h4>
-                                    <p className="text-sm">Supervised rollout and performance monitoring of new protocols.</p>
+                                    <p className="text-sm">Supervised rollout and ongoing performance monitoring.</p>
                                 </div>
                             </div>
                         </div>
@@ -155,7 +154,7 @@ export default function ConsultingPage() {
                                     <h3 className="text-2xl font-bold">Strategic Workshop</h3>
                                     <span className="material-symbols-outlined text-desaturated-teal/40">timer</span>
                                 </div>
-                                <p className="text-sm mb-10">Intensive 4-hour session targeting a specific operational bottleneck or growth goal.</p>
+                                <p className="text-sm mb-10">A focused 4-hour session targeting a specific operational bottleneck or growth goal.</p>
                                 <ul className="space-y-4 mb-12">
                                     <li className="flex items-center gap-3 text-xs font-mono"><span className="w-1.5 h-1.5 bg-desaturated-teal rounded-full"></span> LIVE VIDEO SESSION</li>
                                     <li className="flex items-center gap-3 text-xs font-mono"><span className="w-1.5 h-1.5 bg-desaturated-teal rounded-full"></span> AUDIT SUMMARY REPORT</li>
@@ -171,7 +170,7 @@ export default function ConsultingPage() {
                                     <h3 className="text-2xl font-bold">Full Audit</h3>
                                     <span className="material-symbols-outlined text-desaturated-teal">clinical_notes</span>
                                 </div>
-                                <p className="text-sm text-white/60 mb-10">A one-off, comprehensive structural audit of your entire Amazon operation across all regions.</p>
+                                <p className="text-sm text-white/60 mb-10">A comprehensive structural audit of your entire Amazon operation across all regions.</p>
                                 <ul className="space-y-4 mb-12">
                                     <li className="flex items-center gap-3 text-xs font-mono"><span className="w-1.5 h-1.5 bg-desaturated-teal rounded-full"></span> LOGISTICS EFFICIENCY</li>
                                     <li className="flex items-center gap-3 text-xs font-mono"><span className="w-1.5 h-1.5 bg-desaturated-teal rounded-full"></span> AD-TECH STACK AUDIT</li>
@@ -183,13 +182,13 @@ export default function ConsultingPage() {
                         <div className="bg-white border border-border-subtle p-12 flex flex-col justify-between hover:border-desaturated-teal transition-colors group">
                             <div>
                                 <div className="flex justify-between items-start mb-8">
-                                    <h3 className="text-2xl font-bold">Monthly Retainer</h3>
+                                    <h3 className="text-2xl font-bold">Ongoing Partnership</h3>
                                     <span className="material-symbols-outlined text-desaturated-teal/40">all_inclusive</span>
                                 </div>
-                                <p className="text-sm mb-10">Ongoing advisory partnership acting as your fractional Chief Strategy Officer for the marketplace.</p>
+                                <p className="text-sm mb-10">Ongoing advisory partnership acting as your strategic partner for long-term growth.</p>
                                 <ul className="space-y-4 mb-12">
                                     <li className="flex items-center gap-3 text-xs font-mono"><span className="w-1.5 h-1.5 bg-desaturated-teal rounded-full"></span> UNLIMITED ADVISORY</li>
-                                    <li className="flex items-center gap-3 text-xs font-mono"><span className="w-1.5 h-1.5 bg-desaturated-teal rounded-full"></span> QBR STRATEGY SESSIONS</li>
+                                    <li className="flex items-center gap-3 text-xs font-mono"><span className="w-1.5 h-1.5 bg-desaturated-teal rounded-full"></span> QUARTERLY STRATEGY SESSIONS</li>
                                     <li className="flex items-center gap-3 text-xs font-mono"><span className="w-1.5 h-1.5 bg-desaturated-teal rounded-full"></span> CRISIS MANAGEMENT</li>
                                 </ul>
                             </div>
@@ -211,7 +210,7 @@ export default function ConsultingPage() {
                                     </div>
                                     <div>
                                         <div className="data-label">Availability</div>
-                                        <div className="text-lg font-bold">November 2026</div>
+                                        <div className="text-lg font-bold">Open for New Partners</div>
                                     </div>
                                 </div>
                                 <div className="flex items-center gap-6">
@@ -234,7 +233,7 @@ export default function ConsultingPage() {
                                     </div>
                                     <div className="space-y-2">
                                         <label className="data-label !text-[9px]">Email</label>
-                                        <input className="w-full bg-white border-border-subtle focus:ring-1 focus:ring-desaturated-teal focus:border-desaturated-teal text-sm py-4 px-4 transition-all" placeholder="name@corporation.com" type="email" />
+                                        <input className="w-full bg-white border-border-subtle focus:ring-1 focus:ring-desaturated-teal focus:border-desaturated-teal text-sm py-4 px-4 transition-all" placeholder="name@company.com" type="email" />
                                     </div>
                                 </div>
                                 <div className="space-y-2">
@@ -242,13 +241,13 @@ export default function ConsultingPage() {
                                     <select className="w-full bg-white border-border-subtle focus:ring-1 focus:ring-desaturated-teal focus:border-desaturated-teal text-sm py-4 px-4 transition-all appearance-none">
                                         <option>Market Entry Strategy</option>
                                         <option>Profitability Audit</option>
-                                        <option>Troubleshooting & Recovery</option>
+                                        <option>Account Health & Recovery</option>
                                         <option>Full Retainer Inquiry</option>
                                     </select>
                                 </div>
                                 <div className="space-y-2">
                                     <label className="data-label !text-[9px]">Message</label>
-                                    <textarea className="w-full bg-white border-border-subtle focus:ring-1 focus:ring-desaturated-teal focus:border-desaturated-teal text-sm py-4 px-4 transition-all resize-none" placeholder="Provide context on your 2026 directives..." rows={4}></textarea>
+                                    <textarea className="w-full bg-white border-border-subtle focus:ring-1 focus:ring-desaturated-teal focus:border-desaturated-teal text-sm py-4 px-4 transition-all resize-none" placeholder="How can we help?" rows={4}></textarea>
                                 </div>
                                 <div className="pt-4 border-t border-border-subtle">
                                     <div className="flex justify-between items-center mb-4">

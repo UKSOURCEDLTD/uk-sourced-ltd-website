@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from "react";
@@ -13,20 +14,20 @@ export default function ContactPage() {
 
     const faqs = [
         {
-            question: "How does the partnership initialization work?",
-            answer: "Our process begins with a deep-dive data audit of your existing Amazon storefront. Once the initial \"Link\" form is submitted, our logistics and growth analysts evaluate your current infrastructure against 2026 market benchmarks. We look for alignment in supply chain velocity and brand equity potential."
+            question: "How does the partnership work?",
+            answer: "Our process begins with an audit of your existing Amazon storefront. Once you submit the form, our team evaluates your current infrastructure and growth potential."
         },
         {
-            question: "What regions are covered by the Global Node?",
-            answer: "We operate across 22 primary Amazon regions, including full coverage of North America, the EU5, and emerging markets in APAC. Our internal \"Data DNA\" grid ensures real-time compliance across all cross-border legal frameworks, handling VAT, customs, and localization automatically."
+            question: "What regions do you cover?",
+            answer: "We operate across 22 primary Amazon regions, including full coverage of North America, Europe, and emerging markets in APAC. We handle compliance, VAT, and localization automatically."
         },
         {
-            question: "What are the minimum inventory requirements?",
-            answer: "UK Sourced Ltd works exclusively with high-growth partners who maintain a minimum monthly turnover of $50k or equivalent. We prioritize brands with scalable SKU portfolios and robust manufacturing transparency to ensure uninterrupted supply chain flow."
+            question: "What are the minimum requirements?",
+            answer: "UK Sourced Ltd works with high-growth partners who generally maintain a minimum monthly turnover of $50k. We prioritize brands with scalable product lines and transparent supply chains."
         },
         {
-            question: "Security and data encryption protocols?",
-            answer: "Every partnership is protected by Tier-1 encryption. Your proprietary sales data and supply chain architecture are siloed within our secure \"Logix\" cloud, accessible only via biometric-authenticated terminal links. We treat your data as a critical asset."
+            question: "Is my data secure?",
+            answer: "Yes. We treat your proprietary sales data and supply chain information as critical assets, protected by strict confidentiality agreements and secure systems."
         }
     ];
 
@@ -42,7 +43,7 @@ export default function ContactPage() {
                                     <span className="data-label">Status</span>
                                     <div className="flex items-center gap-2 text-[11px] font-mono mt-1 text-deep-charcoal">
                                         <span className="w-2 h-2 rounded-full bg-desaturated-teal animate-pulse"></span>
-                                        Available for Partnership
+                                        Accepting New Partners
                                     </div>
                                 </div>
                                 <h1 className="text-6xl md:text-8xl font-bold text-deep-charcoal tracking-tighter leading-[0.9]">
@@ -53,10 +54,10 @@ export default function ContactPage() {
 
                             <div className="prose prose-sm text-deep-charcoal/80 mb-16 max-w-md">
                                 <p className="leading-relaxed mb-6">
-                                    We are selectively onboarding partners who are ready to transition from standard marketplace selling to a fully integrated account management and distribution model.
+                                    We partner with brands ready to transition from standard marketplace selling to a fully integrated account management and distribution model.
                                 </p>
                                 <p className="leading-relaxed">
-                                    Our audit process is rigorous but necessary. We ensure that every brand we partner with can fully leverage our global infrastructure for maximum scale.
+                                    Our audit process ensures that every brand we partner with can fully leverage our infrastructure for maximum scale.
                                 </p>
                             </div>
 
@@ -82,9 +83,9 @@ export default function ContactPage() {
                     <div className="lg:col-span-7 p-12 md:p-24 flex flex-col justify-center bg-soft-bg/30">
                         <div className="max-w-xl w-full mx-auto bg-white p-12 md:p-16 border border-border-subtle shadow-xl shadow-desaturated-teal/5 rounded-sm">
                             <div className="mb-12">
-                                <h2 className="text-3xl font-semibold mb-6 text-deep-charcoal">Initiate Partnership Protocol</h2>
+                                <h2 className="text-3xl font-semibold mb-6 text-deep-charcoal">Start Your Application</h2>
                                 <p className="text-deep-charcoal/70 leading-relaxed">
-                                    Fill out the form below to begin the vetting process. Our growth analysts will review your current Amazon footprint and logistics profile within 24 standard hours.
+                                    Fill out the form below to begin. Our team will review your current Amazon footprint and reach out within 24 hours.
                                 </p>
                             </div>
                             <form action={submitContactForm} className="space-y-10">
@@ -103,11 +104,11 @@ export default function ContactPage() {
                                     <input name="storefrontUrl" className="w-full bg-soft-bg/50 border border-border-subtle focus:border-desaturated-teal focus:ring-1 focus:ring-desaturated-teal p-4 text-sm font-medium text-deep-charcoal placeholder:text-deep-charcoal/30 transition-all rounded-sm" placeholder="amazon.com/shops/your-store" type="text" />
                                 </div>
                                 <div className="relative group">
-                                    <label className="text-[10px] font-mono uppercase tracking-widest text-deep-charcoal/60 mb-2 block group-focus-within:text-desaturated-teal transition-colors">Business Objectives</label>
-                                    <textarea name="projectDetails" className="w-full bg-soft-bg/50 border border-border-subtle focus:border-desaturated-teal focus:ring-1 focus:ring-desaturated-teal p-4 text-sm font-medium text-deep-charcoal placeholder:text-deep-charcoal/30 transition-all resize-none rounded-sm leading-relaxed" placeholder="Briefly describe your current volume and what you are looking to achieve with an account management partnership..." rows={4}></textarea>
+                                    <label className="text-[10px] font-mono uppercase tracking-widest text-deep-charcoal/60 mb-2 block group-focus-within:text-desaturated-teal transition-colors">Business Goals</label>
+                                    <textarea name="projectDetails" className="w-full bg-soft-bg/50 border border-border-subtle focus:border-desaturated-teal focus:ring-1 focus:ring-desaturated-teal p-4 text-sm font-medium text-deep-charcoal placeholder:text-deep-charcoal/30 transition-all resize-none rounded-sm leading-relaxed" placeholder="Briefly describe your current volume and what you are looking to achieve..." rows={4}></textarea>
                                 </div>
                                 <button type="submit" className="w-full bg-desaturated-teal text-white py-5 text-xs font-bold tracking-[0.25em] uppercase hover:bg-deep-charcoal transition-all shadow-lg shadow-desaturated-teal/20 rounded-sm mt-4">
-                                    Submit for Review
+                                    Submit Application
                                 </button>
                                 <p className="text-[9px] font-mono text-center text-deep-charcoal/40 uppercase tracking-widest mt-6">
                                     Protected by 256-bit SSL Encryption

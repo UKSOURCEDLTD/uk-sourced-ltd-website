@@ -28,18 +28,16 @@ export default function Home() {
         <div className="lg:col-span-7 p-8 md:p-24 flex flex-col justify-center border-r border-border-subtle">
           <div className="mb-8 data-label flex items-center gap-3">
             <span className="w-2 h-2 rounded-full bg-desaturated-teal"></span>
-            Amazon Account Management & Distribution
+            Amazon Growth Partner
           </div>
           <h1 className="text-5xl md:text-7xl mb-12 font-light">
-            Scaling on the <br />
+            Your Trusted <br />
             <span className="font-semibold text-desaturated-teal">
-              Amazon Marketplace
+              Amazon Agency
             </span>
           </h1>
           <p className="text-xl max-w-xl mb-14">
-            Redefining the standard for Amazon Account Management & Distribution. We deploy
-            sophisticated logistics infrastructure and analytical rigor to
-            scale brands within the ecosystem.
+            Helping businesses across the UK conquer the Amazon ecosystem. We specialize in wholesale re-selling, account management, and listing optimization so you can focus on your brand.
           </p>
           <div className="flex flex-col sm:flex-row gap-5">
             <BookingButton onClick={() => setIsBookingModalOpen(true)} />
@@ -70,9 +68,9 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-t from-white/40 to-transparent"></div>
             <div className="absolute bottom-6 left-6 right-6 flex justify-between items-end">
               <div className="space-y-1">
-                <div className="data-label text-[10px]">Global Network</div>
+                <div className="data-label text-[10px]">Trusted Partner</div>
                 <div className="text-xs font-mono opacity-50">
-                  Active
+                  Since 2018
                 </div>
               </div>
               <div className="h-12 w-[1px] bg-desaturated-teal/30"></div>
@@ -84,10 +82,10 @@ export default function Home() {
       <section className="bg-white text-deep-charcoal/30 py-8 overflow-hidden whitespace-nowrap border-y border-border-subtle">
         <div className="flex gap-24 text-[11px] font-mono tracking-[0.4em] uppercase font-bold">
           <span>
-            TRUSTED BY HIGH GROWTH BRANDS WORLDWIDE
+            PARTNERING WITH UK BRANDS FOR GROWTH
           </span>
           <span>
-            TRUSTED BY HIGH GROWTH BRANDS WORLDWIDE
+            PARTNERING WITH UK BRANDS FOR GROWTH
           </span>
         </div>
       </section>
@@ -96,41 +94,38 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-0 border border-border-subtle bg-white">
           <div className="lg:col-span-2 p-14 border-b lg:border-b-0 lg:border-r border-border-subtle">
             <div className="data-label mb-6 text-desaturated-teal">
-              Section 01 // Efficiency
+              Why Choose Us
             </div>
             <h2 className="text-4xl mb-8 font-semibold">
-              The Amazon Analytical Edge
+              We Simplify Amazon
             </h2>
             <p className="text-lg mb-12">
-              Precision is the core of our DNA. We eliminate guesswork through
-              high-fidelity data modeling and real-time inventory
-              synchronization.
+              Navigating Amazon can be overwhelming. We bring the expertise, tools, and dedication needed to turn complexities into growth opportunities for your business.
             </p>
             <div className="space-y-8">
               <div className="flex justify-between items-end border-b border-border-subtle pb-4">
-                <span className="data-label">Latency Metric</span>
-                <span className="data-value">{`< 140ms`}</span>
+                <span className="data-label">Listing Optimization</span>
+                <span className="data-value">Expert</span>
               </div>
               <div className="flex justify-between items-end border-b border-border-subtle pb-4">
-                <span className="data-label">Market Absorption</span>
-                <span className="data-value">99.2%</span>
+                <span className="data-label">Account Health</span>
+                <span className="data-value">Protected</span>
               </div>
               <div className="flex justify-between items-end border-b border-border-subtle pb-4">
-                <span className="data-label">Active Territories</span>
-                <span className="data-value">Global_24</span>
+                <span className="data-label">Support</span>
+                <span className="data-value">Dedicated</span>
               </div>
             </div>
           </div>
           <div className="soft-block flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-border-subtle">
             <span className="text-desaturated-teal text-3xl font-light">
               {/* Material Symbol placeholder or Lucide icon */}
-              ∡
+              ★
             </span>
             <div>
-              <h3 className="text-xl mb-3 font-semibold">Neural Stocking</h3>
+              <h3 className="text-xl mb-3 font-semibold">Quality First</h3>
               <p className="text-sm">
-                Predictive inventory modeling powered by proprietary
-                algorithms.
+                We are committed to representing your brand with the highest standards of quality and integrity.
               </p>
             </div>
           </div>
@@ -139,9 +134,9 @@ export default function Home() {
               100<span className="text-2xl">%</span>
             </div>
             <div>
-              <h3 className="text-xl mb-3 font-semibold">Compliance</h3>
+              <h3 className="text-xl mb-3 font-semibold">Turnkey Solutions</h3>
               <p className="text-sm">
-                Exceeding all marketplace health and safety requirements daily.
+                From logistics to marketing, we handle the heavy lifting so you don't have to.
               </p>
             </div>
           </div>
@@ -150,31 +145,29 @@ export default function Home() {
             id="logistics"
           >
             <span className="text-3xl text-desaturated-teal/40 mb-10">
-              🌐
+              🤝
             </span>
             <div>
-              <h3 className="text-lg mb-2 font-semibold">Cross-Border</h3>
+              <h3 className="text-lg mb-2 font-semibold">Partnership</h3>
               <div className="text-4xl font-mono text-deep-charcoal/90">
-                22 Regions
+                Long-Term
               </div>
             </div>
           </div>
           <div className="lg:col-span-3 p-14 border-t border-border-subtle bg-soft-bg/30">
             <h3 className="text-2xl mb-10 font-semibold tracking-tight">
-              Global Supply Chain Management
+              Comprehensive Brand Management
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
               <div>
                 <p className="mb-10 text-deep-charcoal/70 leading-relaxed">
-                  We orchestrate end-to-end logistics with minimal friction.
-                  Our systems integrate directly with your production flow to
-                  ensure consistent product availability.
+                  We understand that your brand is your legacy. Our team works tirelessly to ensure your products are presented perfectly, stocked consistently, and marketed effectively on Amazon.
                 </p>
                 <Link
                   href="/wholesale"
                   className="text-desaturated-teal text-xs font-bold font-mono tracking-widest uppercase flex items-center gap-3 group"
                 >
-                  Explore Capabilities
+                  Explore Services
                   <span className="group-hover:translate-x-1 transition-transform">
                     →
                   </span>
@@ -183,20 +176,20 @@ export default function Home() {
               <div className="space-y-8">
                 <div className="space-y-3">
                   <div className="flex justify-between text-[11px] font-mono font-bold uppercase text-deep-charcoal/60">
-                    <span>Optimization_Node_A</span>
-                    <span>94%</span>
+                    <span>Retail Partnership</span>
+                    <span>Trusted</span>
                   </div>
                   <div className="h-2 bg-deep-charcoal/5 w-full rounded-full overflow-hidden">
-                    <div className="h-full bg-desaturated-teal w-[94%]"></div>
+                    <div className="h-full bg-desaturated-teal w-[100%]"></div>
                   </div>
                 </div>
                 <div className="space-y-3">
                   <div className="flex justify-between text-[11px] font-mono font-bold uppercase text-deep-charcoal/60">
-                    <span>Optimization_Node_B</span>
-                    <span>88%</span>
+                    <span>Growth Consultancy</span>
+                    <span>Proven</span>
                   </div>
                   <div className="h-2 bg-deep-charcoal/5 w-full rounded-full overflow-hidden">
-                    <div className="h-full bg-desaturated-teal/50 w-[88%]"></div>
+                    <div className="h-full bg-desaturated-teal/50 w-[100%]"></div>
                   </div>
                 </div>
               </div>

@@ -10,10 +10,10 @@ export default function WholesalePage() {
                         <div className="data-label text-desaturated-teal mb-6">Amazon Distribution Partner</div>
                         <h1 className="text-4xl md:text-6xl font-light mb-10 leading-tight">
                             Wholesale Partnership <br />
-                            <span className="font-semibold text-deep-charcoal">Reimagined</span>
+                            <span className="font-semibold text-deep-charcoal">Redefined</span>
                         </h1>
                         <p className="text-lg text-deep-charcoal/80 mb-12 max-w-xl leading-relaxed">
-                            We don&apos;t just move boxes; we engineer flow. Our wholesale partnership model focuses on high-velocity FBA account management and distribution, ensuring your products dominate the Buy Box while maintaining strict Prime performance standards.
+                            We streamline your path to the customer. Our wholesale partnership model focuses on high-velocity FBA account management and distribution, ensuring your products allow you to dominate the Buy Box while maintaining strict Prime performance standards.
                         </p>
                         <Link
                             href="/contact"
@@ -28,12 +28,12 @@ export default function WholesalePage() {
                         <div className="w-full max-w-lg bg-white border border-border-subtle p-8 shadow-2xl shadow-deep-charcoal/5 relative z-10">
                             <div className="flex justify-between items-center mb-8">
                                 <div>
-                                    <div className="data-label text-[10px] mb-1">Market Overview</div>
-                                    <div className="text-2xl font-mono font-bold text-deep-charcoal">INDEX: 4,291.02</div>
+                                    <div className="data-label text-[10px] mb-1">Market Activity</div>
+                                    <div className="text-2xl font-mono font-bold text-deep-charcoal">HEALTH: 98.4%</div>
                                 </div>
                                 <div className="flex gap-2">
                                     <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-                                    <span className="text-[10px] font-mono text-deep-charcoal/40 uppercase">Streaming</span>
+                                    <span className="text-[10px] font-mono text-deep-charcoal/40 uppercase">Live</span>
                                 </div>
                             </div>
 
@@ -54,12 +54,12 @@ export default function WholesalePage() {
                                     <div className="text-sm font-bold text-deep-charcoal">+24%</div>
                                 </div>
                                 <div className="p-3 bg-soft-bg border border-border-subtle">
-                                    <div className="text-[10px] font-mono text-deep-charcoal/50 uppercase mb-1">Demand</div>
-                                    <div className="text-sm font-bold text-deep-charcoal">High</div>
+                                    <div className="text-[10px] font-mono text-deep-charcoal/50 uppercase mb-1">Ratings</div>
+                                    <div className="text-sm font-bold text-deep-charcoal">4.9/5</div>
                                 </div>
                                 <div className="p-3 bg-soft-bg border border-border-subtle">
                                     <div className="text-[10px] font-mono text-deep-charcoal/50 uppercase mb-1">Stock</div>
-                                    <div className="text-sm font-bold text-desaturated-teal">Optimal</div>
+                                    <div className="text-sm font-bold text-desaturated-teal">100%</div>
                                 </div>
                             </div>
                         </div>
@@ -76,7 +76,7 @@ export default function WholesalePage() {
                         </div>
                         <h3 className="text-xl font-semibold">Brand Elevation</h3>
                         <p className="text-sm text-deep-charcoal/70 leading-relaxed">
-                            We maintain strict MAP compliance and enhance listing quality to ensure your brand perception aligns with its value.
+                            We maintain strict MAP compliance and enhance listing quality to ensure your brand perception aligns with its true value.
                         </p>
                     </div>
                     <div className="space-y-4">
@@ -85,7 +85,7 @@ export default function WholesalePage() {
                         </div>
                         <h3 className="text-xl font-semibold">Logistics Sync</h3>
                         <p className="text-sm text-deep-charcoal/70 leading-relaxed">
-                            Our API integrates directly with your warehouse management system for seamless stock replenishment.
+                            Our team integrates directly with your warehouse management system to ensure seamless stock replenishment and availability.
                         </p>
                     </div>
                     <div className="space-y-4">
@@ -94,7 +94,7 @@ export default function WholesalePage() {
                         </div>
                         <h3 className="text-xl font-semibold">Global Reach</h3>
                         <p className="text-sm text-deep-charcoal/70 leading-relaxed">
-                            Access to 22+ Amazon marketplaces immediately upon partnership initialization.
+                            Instant access to our established distribution network across major UK and International Amazon marketplaces.
                         </p>
                     </div>
                 </section>

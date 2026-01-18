@@ -10,14 +10,14 @@ export default function ManagementPage() {
                     <div className="lg:col-span-7 p-8 md:p-24 flex flex-col justify-center border-r border-border-subtle">
                         <div className="mb-8 data-label flex items-center gap-3">
                             <span className="w-2 h-2 rounded-full bg-desaturated-teal"></span>
-                            Operational Stream: Full Service Management
+                            Our Services
                         </div>
                         <h1 className="text-5xl md:text-8xl mb-10 font-light leading-[0.95] tracking-tighter">
-                            Elite <br />
-                            <span className="font-semibold text-desaturated-teal">Account Management & Distribution Partner</span>
+                            Full Service <br />
+                            <span className="font-semibold text-desaturated-teal">Account Management</span>
                         </h1>
                         <p className="text-xl max-w-xl mb-14 text-deep-charcoal/70">
-                            We don&apos;t just clear errors; we engineer dominance. UK Sourced Ltd combines elite strategic oversight with relentless distribution execution to scale your brand on Amazon.
+                            We handle everything. From strategy to execution, UK Sourced Ltd takes full responsibility for your Amazon growth, combining strategic oversight with relentless execution.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-5">
                             <Link
@@ -45,8 +45,8 @@ export default function ManagementPage() {
                                             <span className="material-symbols-outlined text-desaturated-teal text-3xl">storefront</span>
                                         </div>
                                         <div>
-                                            <div className="data-label text-[10px] opacity-60">Store ID</div>
-                                            <div className="font-mono font-bold text-xs uppercase">AMZ_UK_026_S</div>
+                                            <div className="data-label text-[10px] opacity-60">Store Health</div>
+                                            <div className="font-mono font-bold text-xs uppercase text-green-600">Excellent</div>
                                         </div>
                                     </div>
                                     <div className="text-right">
@@ -57,11 +57,11 @@ export default function ManagementPage() {
                                 <div className="space-y-8">
                                     <div className="space-y-3">
                                         <div className="flex justify-between data-label text-[10px]">
-                                            <span>Listing Health</span>
-                                            <span className="text-desaturated-teal">Optimized</span>
+                                            <span>Listing Optimization</span>
+                                            <span className="text-desaturated-teal">100%</span>
                                         </div>
                                         <div className="h-2 w-full bg-deep-charcoal/5 rounded-full overflow-hidden">
-                                            <div className="progress-bar-fill w-[92%]"></div>
+                                            <div className="progress-bar-fill w-[100%]"></div>
                                         </div>
                                     </div>
                                     <div className="grid grid-cols-3 gap-4 pt-4 border-t border-border-subtle/50">
@@ -74,7 +74,7 @@ export default function ManagementPage() {
                                             <div className="font-mono text-sm font-bold text-desaturated-teal">3.4%</div>
                                         </div>
                                         <div className="space-y-1">
-                                            <div className="data-label text-[8px] opacity-50">Rank</div>
+                                            <div className="data-label text-[8px] opacity-50">BSR</div>
                                             <div className="font-mono text-sm font-bold">#1</div>
                                         </div>
                                     </div>
@@ -90,7 +90,7 @@ export default function ManagementPage() {
                             <div className="order-2 lg:order-1">
                                 <div className="data-label text-desaturated-teal mb-6">PPC & Advertising</div>
                                 <h2 className="text-5xl mb-8 font-semibold">Precision Performance Marketing</h2>
-                                <p className="text-lg mb-10 text-deep-charcoal/70">Stop burning budget. Our proprietary bidding architectures and daily manual optimizations ensure every pound spent acquires a high-value customer. We trade on data, not guesswork.</p>
+                                <p className="text-lg mb-10 text-deep-charcoal/70">Maximize your ROI with expert campaign management. We use data-driven strategies to ensure every pound spent acquires a high-value customer, focusing on profitability and growth.</p>
                                 <div className="grid grid-cols-2 gap-8 mb-12">
                                     <div className="border-l-2 border-desaturated-teal pl-6">
                                         <div className="data-label">Average ROAS</div>
@@ -106,13 +106,13 @@ export default function ManagementPage() {
                                         <div className="w-10 h-10 rounded bg-desaturated-teal/5 flex items-center justify-center group-hover:bg-desaturated-teal group-hover:text-white transition-all">
                                             <span className="material-symbols-outlined text-sm">trending_up</span>
                                         </div>
-                                        <span className="text-xs font-mono font-bold uppercase tracking-wider">Dynamic Bid Modulation</span>
+                                        <span className="text-xs font-mono font-bold uppercase tracking-wider">Optimized Bidding</span>
                                     </div>
                                     <div className="flex items-center gap-4 group">
                                         <div className="w-10 h-10 rounded bg-desaturated-teal/5 flex items-center justify-center group-hover:bg-desaturated-teal group-hover:text-white transition-all">
                                             <span className="material-symbols-outlined text-sm">filter_alt</span>
                                         </div>
-                                        <span className="text-xs font-mono font-bold uppercase tracking-wider">Negative Keyword Harvesting</span>
+                                        <span className="text-xs font-mono font-bold uppercase tracking-wider">Keyword Optimization</span>
                                     </div>
                                 </div>
                             </div>
@@ -120,9 +120,9 @@ export default function ManagementPage() {
                                 <div className="flex items-center justify-between mb-10">
                                     <div className="flex items-center gap-2">
                                         <span className="w-2 h-2 rounded-full bg-desaturated-teal"></span>
-                                        <span className="data-label text-[10px]">Real-Time Performance Graphs</span>
+                                        <span className="data-label text-[10px]">Real-Time Performance</span>
                                     </div>
-                                    <span className="text-[10px] font-mono opacity-40">Auto Scale Enabled</span>
+                                    <span className="text-[10px] font-mono opacity-40">Live Data</span>
                                 </div>
                                 <div className="h-64 flex items-end gap-2.5">
                                     <div className="flex-1 bg-desaturated-teal/10 h-[40%] hover:h-[45%] transition-all duration-300 rounded-t-sm relative group">
@@ -148,7 +148,7 @@ export default function ManagementPage() {
                                         <div className="text-2xl font-mono font-bold">92.4%</div>
                                     </div>
                                     <div className="space-y-1 text-right">
-                                        <div className="data-label text-[9px]">Click Velocity</div>
+                                        <div className="data-label text-[9px]">Click Rate</div>
                                         <div className="text-2xl font-mono font-bold text-desaturated-teal">+14.2%</div>
                                     </div>
                                 </div>
@@ -162,22 +162,22 @@ export default function ManagementPage() {
                         <div className="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
                             <div>
                                 <div className="data-label text-desaturated-teal mb-4">Supply Chain</div>
-                                <h2 className="text-5xl font-semibold">Supply Chain Synchronization</h2>
+                                <h2 className="text-5xl font-semibold">Logistics & Inventory</h2>
                             </div>
-                            <p className="text-deep-charcoal/60 max-w-sm text-sm">Intelligent distribution logic that keeps your inventory moving across global borders without friction.</p>
+                            <p className="text-deep-charcoal/60 max-w-sm text-sm">Seamless inventory management across all marketplaces to ensure you never miss a sale.</p>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-6">
                             <div className="md:col-span-4 lg:col-span-4 bento-item flex flex-col justify-between min-h-[450px]">
                                 <div>
                                     <span className="material-symbols-outlined text-5xl text-desaturated-teal mb-8">hub</span>
-                                    <h3 className="text-3xl font-semibold mb-6">Seamless Logistics</h3>
+                                    <h3 className="text-3xl font-semibold mb-6">Seamless Coordination</h3>
                                     <p className="text-deep-charcoal/60 max-w-lg mb-8">From factory floor to FBA center, we synchronize your stock. Prevent stock-outs, minimize storage fees, and maintain Prime eligibility 100% of the time.</p>
                                 </div>
                                 <div className="space-y-8">
                                     <div className="space-y-3">
                                         <div className="flex justify-between data-label text-[10px]">
-                                            <span>Regional Node UK Network</span>
-                                            <span className="text-desaturated-teal">99.9% SYNCED</span>
+                                            <span>In-Stock Rate</span>
+                                            <span className="text-desaturated-teal">99.9%</span>
                                         </div>
                                         <div className="h-1.5 bg-deep-charcoal/5 w-full rounded-full">
                                             <div className="progress-bar-fill w-[99.9%] rounded-full"></div>
@@ -185,8 +185,8 @@ export default function ManagementPage() {
                                     </div>
                                     <div className="flex gap-6">
                                         <div className="bg-soft-bg p-6 flex-1 border border-border-subtle">
-                                            <div className="data-label text-[9px] mb-2">API Latency</div>
-                                            <div className="text-2xl font-mono">120ms</div>
+                                            <div className="data-label text-[9px] mb-2">Turnover Rate</div>
+                                            <div className="text-2xl font-mono">Fast</div>
                                         </div>
                                         <div className="bg-soft-bg p-6 flex-1 border border-border-subtle">
                                             <div className="data-label text-[9px] mb-2">Daily Movement</div>
@@ -202,20 +202,20 @@ export default function ManagementPage() {
                                 </div>
                                 <div>
                                     <h4 className="font-bold uppercase text-[12px] tracking-widest mb-3">Out-of-Stock Risk</h4>
-                                    <p className="text-sm text-deep-charcoal/50 leading-relaxed">Predictive modeling prevents &apos;Stock-Out&apos; penalties and protects category rank during high-velocity seasons.</p>
+                                    <p className="text-sm text-deep-charcoal/50 leading-relaxed">Predictive modeling prevents stock-outs and protects category rank during high-velocity seasons.</p>
                                 </div>
                             </div>
                             <div className="md:col-span-3 lg:col-span-2 bento-item flex flex-col justify-center items-center text-center">
                                 <div className="w-20 h-20 rounded-full border border-border-subtle flex items-center justify-center mb-8 bg-soft-bg/50">
                                     <span className="material-symbols-outlined text-4xl text-desaturated-teal">schedule</span>
                                 </div>
-                                <div className="data-label mb-3">Lead Time Delta</div>
-                                <div className="text-4xl font-mono font-bold">-2.4 Days</div>
-                                <p className="text-[10px] font-mono mt-4 text-deep-charcoal/40">VS PREVIOUS PERIOD</p>
+                                <div className="data-label mb-3">Lead Time</div>
+                                <div className="text-4xl font-mono font-bold">-2 Days</div>
+                                <p className="text-[10px] font-mono mt-4 text-deep-charcoal/40">VS AVERAGE</p>
                             </div>
                             <div className="md:col-span-3 lg:col-span-4 bento-item flex items-center justify-between group">
                                 <div className="max-w-md">
-                                    <h3 className="text-2xl font-semibold mb-3">Multi-Channel Routing</h3>
+                                    <h3 className="text-2xl font-semibold mb-3">Multi-Channel Support</h3>
                                     <p className="text-sm text-deep-charcoal/60">Unified supply chain data flow across global marketplace nodes with intelligent freight forwarding logic.</p>
                                 </div>
                                 <div className="flex -space-x-2">
@@ -238,16 +238,16 @@ export default function ManagementPage() {
                     <div className="max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-24 items-center">
                         <div className="lg:col-span-5">
                             <div className="data-label text-desaturated-teal mb-6">Brand Protection</div>
-                            <h2 className="text-5xl mb-8 font-semibold leading-tight">Ironclad Brand Defense</h2>
-                            <p className="text-lg text-deep-charcoal/70 mb-12">Your brand equity is non-negotiable. We deploy monitoring algorithms to instantly detect and remove hijackers, counterfeiters, and unauthorized resellers.</p>
+                            <h2 className="text-5xl mb-8 font-semibold leading-tight">Brand Defense</h2>
+                            <p className="text-lg text-deep-charcoal/70 mb-12">Your brand equity is non-negotiable. We deploy monitoring systems to instantly detect and remove hijackers, counterfeiters, and unauthorized resellers.</p>
                             <ul className="space-y-10">
                                 <li className="flex items-start gap-5">
                                     <div className="bg-desaturated-teal/10 p-2 rounded">
                                         <span className="material-symbols-outlined text-desaturated-teal text-2xl">verified_user</span>
                                     </div>
                                     <div>
-                                        <span className="block font-bold text-sm uppercase tracking-wider mb-1">Automated IP Sweeps</span>
-                                        <span className="text-sm text-deep-charcoal/50 font-mono">24/7 GLOBAL MONITORING ACTIVE</span>
+                                        <span className="block font-bold text-sm uppercase tracking-wider mb-1">Automated Monitoring</span>
+                                        <span className="text-sm text-deep-charcoal/50 font-mono">24/7 ACTIVE</span>
                                     </div>
                                 </li>
                                 <li className="flex items-start gap-5">
@@ -264,7 +264,7 @@ export default function ManagementPage() {
                                         <span className="material-symbols-outlined text-desaturated-teal text-2xl">security</span>
                                     </div>
                                     <div>
-                                        <span className="block font-bold text-sm uppercase tracking-wider mb-1">Buy Box Guardian</span>
+                                        <span className="block font-bold text-sm uppercase tracking-wider mb-1">Buy Box Protection</span>
                                         <span className="text-sm text-deep-charcoal/50 font-mono">OWNERSHIP: 99.8% AVG</span>
                                     </div>
                                 </li>
@@ -278,7 +278,7 @@ export default function ManagementPage() {
                                         <div className="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
                                         <div className="w-2.5 h-2.5 rounded-full bg-green-500"></div>
                                     </div>
-                                    <span className="text-[9px] font-mono text-white/40 tracking-widest font-bold">SECURITY CONSOLE</span>
+                                    <span className="text-[9px] font-mono text-white/40 tracking-widest font-bold">HEALTH MONITOR</span>
                                 </div>
                                 <div className="p-10 space-y-8 bg-white">
                                     <div className="flex items-center justify-between border-b border-border-subtle pb-6">
@@ -288,7 +288,7 @@ export default function ManagementPage() {
                                             </div>
                                             <div>
                                                 <div className="text-[11px] font-mono font-bold tracking-tight">Unauthorized Seller</div>
-                                                <div className="text-[10px] text-red-600 font-mono font-bold mt-1">THREAT LEVEL: CRITICAL</div>
+                                                <div className="text-[10px] text-red-600 font-mono font-bold mt-1">Found on ASIN B0...</div>
                                             </div>
                                         </div>
                                         <button className="bg-red-600 text-white text-[10px] px-5 py-2 font-bold uppercase tracking-widest hover:bg-red-700 transition-colors rounded-sm">Issue Takedown</button>
@@ -307,7 +307,7 @@ export default function ManagementPage() {
                                     </div>
                                     <div className="bg-desaturated-teal/5 p-8 rounded-lg border border-desaturated-teal/10">
                                         <div className="flex justify-between items-center mb-6">
-                                            <div className="data-label text-[10px]">Threat Detection Matrix</div>
+                                            <div className="data-label text-[10px]">Threat Scan</div>
                                             <div className="flex gap-1">
                                                 <div className="w-1 h-3 bg-desaturated-teal"></div>
                                                 <div className="w-1 h-3 bg-desaturated-teal/40"></div>
@@ -316,7 +316,7 @@ export default function ManagementPage() {
                                         </div>
                                         <div className="h-40 flex flex-col items-center justify-center border-2 border-dashed border-desaturated-teal/20 rounded-md bg-white/50">
                                             <span className="material-symbols-outlined text-desaturated-teal/30 mb-2 animate-pulse">radar</span>
-                                            <span className="font-mono text-[10px] text-desaturated-teal/60 tracking-widest">SCANNING REGIONAL NODES...</span>
+                                            <span className="font-mono text-[10px] text-desaturated-teal/60 tracking-widest">MONITORING MARKETPLACES...</span>
                                             <div className="mt-4 w-48 h-1 bg-deep-charcoal/5 rounded-full overflow-hidden">
                                                 <div className="progress-bar-fill w-3/4"></div>
                                             </div>
@@ -333,7 +333,7 @@ export default function ManagementPage() {
                         <div>
                             <div className="data-label text-desaturated-teal mb-6">Get Started</div>
                             <h2 className="text-5xl mb-10 font-semibold leading-tight">Contact Us</h2>
-                            <p className="text-xl mb-14 text-deep-charcoal/60 leading-relaxed">Our onboarding process begins with a comprehensive strategic audit. We select retail partners whose long-term vision aligns with our high-performance technical infrastructure.</p>
+                            <p className="text-xl mb-14 text-deep-charcoal/60 leading-relaxed">Our process begins with a comprehensive audit. We partner with brands whose long-term vision aligns with our high-performance infrastructure.</p>
                             <div className="space-y-12">
                                 <div className="border-l-2 border-desaturated-teal pl-10 group">
                                     <div className="data-label mb-3 opacity-60">Email Us</div>
@@ -341,7 +341,7 @@ export default function ManagementPage() {
                                 </div>
                                 <div className="border-l-2 border-border-subtle pl-10">
                                     <div className="data-label mb-3 opacity-60">Headquarters</div>
-                                    <div className="text-2xl font-medium text-deep-charcoal/80 font-heading">London / 51.5074° N, 0.1278° W</div>
+                                    <div className="text-2xl font-medium text-deep-charcoal/80 font-heading">London, United Kingdom</div>
                                 </div>
                             </div>
                         </div>
@@ -353,20 +353,20 @@ export default function ManagementPage() {
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
                                     <div className="space-y-4">
                                         <label className="data-label">Name</label>
-                                        <input className="w-full bg-transparent border-b-2 border-border-subtle focus:border-desaturated-teal border-t-0 border-l-0 border-r-0 focus:ring-0 text-deep-charcoal py-3 px-0 transition-colors font-medium placeholder:text-deep-charcoal/20" placeholder="Full Name / Principal" type="text" />
+                                        <input className="w-full bg-transparent border-b-2 border-border-subtle focus:border-desaturated-teal border-t-0 border-l-0 border-r-0 focus:ring-0 text-deep-charcoal py-3 px-0 transition-colors font-medium placeholder:text-deep-charcoal/20" placeholder="Full Name" type="text" />
                                     </div>
                                     <div className="space-y-4">
                                         <label className="data-label">Email</label>
-                                        <input className="w-full bg-transparent border-b-2 border-border-subtle focus:border-desaturated-teal border-t-0 border-l-0 border-r-0 focus:ring-0 text-deep-charcoal py-3 px-0 transition-colors font-medium placeholder:text-deep-charcoal/20" placeholder="email@enterprise.com" type="email" />
+                                        <input className="w-full bg-transparent border-b-2 border-border-subtle focus:border-desaturated-teal border-t-0 border-l-0 border-r-0 focus:ring-0 text-deep-charcoal py-3 px-0 transition-colors font-medium placeholder:text-deep-charcoal/20" placeholder="email@company.com" type="email" />
                                     </div>
                                 </div>
                                 <div className="space-y-4">
                                     <label className="data-label">Storefront URL</label>
-                                    <input className="w-full bg-transparent border-b-2 border-border-subtle focus:border-desaturated-teal border-t-0 border-l-0 border-r-0 focus:ring-0 text-deep-charcoal py-3 px-0 transition-colors font-medium placeholder:text-deep-charcoal/20" placeholder="https://marketplace-link.com" type="text" />
+                                    <input className="w-full bg-transparent border-b-2 border-border-subtle focus:border-desaturated-teal border-t-0 border-l-0 border-r-0 focus:ring-0 text-deep-charcoal py-3 px-0 transition-colors font-medium placeholder:text-deep-charcoal/20" placeholder="https://amazon.com/..." type="text" />
                                 </div>
                                 <div className="space-y-4">
                                     <label className="data-label">Message</label>
-                                    <textarea className="w-full bg-transparent border-b-2 border-border-subtle focus:border-desaturated-teal border-t-0 border-l-0 border-r-0 focus:ring-0 text-deep-charcoal py-3 px-0 transition-colors resize-none font-medium placeholder:text-deep-charcoal/20" placeholder="Specific objectives or challenges..." rows={3}></textarea>
+                                    <textarea className="w-full bg-transparent border-b-2 border-border-subtle focus:border-desaturated-teal border-t-0 border-l-0 border-r-0 focus:ring-0 text-deep-charcoal py-3 px-0 transition-colors resize-none font-medium placeholder:text-deep-charcoal/20" placeholder="How can we help?" rows={3}></textarea>
                                 </div>
                                 <button className="w-full bg-desaturated-teal text-white font-bold py-6 mt-6 hover:bg-deep-charcoal transition-all uppercase tracking-[0.25em] text-xs rounded-sm shadow-xl shadow-desaturated-teal/20">
                                     Send Message
