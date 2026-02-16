@@ -8,11 +8,26 @@ import { TextToSpeechClient } from '@google-cloud/text-to-speech';
 // Initialize Vertex AI
 const projectId = process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID || process.env.GCLOUD_PROJECT;
 const location = 'us-central1';
-const vertexAI = new VertexAI({ project: projectId, location });
-const model = vertexAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
 
-// Initialize TTS
-const ttsClient = new TextToSpeechClient();
+let vertexAI: VertexAI | null = null;
+let model: any | null = null;
+let ttsClient: TextToSpeechClient | null = null;
+
+function getVertexModel() {
+    if (!model) {
+        if (!projectId) throw new Error("Project ID not set");
+        vertexAI = new VertexAI({ project: projectId, location });
+        model = vertexAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+    }
+    return model;
+}
+
+function getTtsClient() {
+    if (!ttsClient) {
+        ttsClient = new TextToSpeechClient();
+    }
+    return ttsClient;
+}
 
 export async function POST(req: Request) {
     console.log("Voice Agent: Request received");
@@ -39,7 +54,7 @@ export async function POST(req: Request) {
         Context:
         ${context}`;
 
-        const chat = model.startChat({
+        const chat = getVertexModel().startChat({
             history: [
                 { role: 'user', parts: [{ text: systemPrompt }] },
                 { role: 'model', parts: [{ text: "Understood. I am ready to represent UK Sourced Ltd." }] }
@@ -58,7 +73,7 @@ export async function POST(req: Request) {
             audioConfig: { audioEncoding: 'MP3' as const },
         };
 
-        const [response] = await ttsClient.synthesizeSpeech(request);
+        const [response] = await getTtsClient().synthesizeSpeech(request);
         const audioContent = response.audioContent;
 
         // Convert audio buffer to base64
