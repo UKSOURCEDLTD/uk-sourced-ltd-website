@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server';
 
+export const dynamic = 'force-dynamic';
+
 export async function GET() {
     // Mock data for the agent to consume
     // In a real scenario, this would query a database or ERP system.

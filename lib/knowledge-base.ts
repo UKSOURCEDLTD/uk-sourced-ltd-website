@@ -2,11 +2,21 @@ import { VertexAI } from '@google-cloud/vertexai';
 import * as admin from 'firebase-admin';
 
 // Initialize Firebase Admin if not already initialized
-if (!admin.apps.length) {
-    admin.initializeApp();
+function getDb() {
+    if (!admin.apps.length) {
+        // Only initialize if we have credentials or in a valid environment
+        // For build time, if credentials are missing, we might want to skip or mock, 
+        // but lazy loading solves the import side-effect.
+        try {
+            admin.initializeApp();
+        } catch (e) {
+            console.warn("Firebase Admin init failed (might be build time):", e);
+            // If we are in a build and this fails, it's fine as long as we don't use it.
+            return null;
+        }
+    }
+    return admin.firestore();
 }
-
-const db = admin.firestore();
 
 // Initialize Vertex AI
 // Note: Requires Google Cloud Project ID to be set in environment variables or ADC.
@@ -55,6 +65,8 @@ export async function generateEmbedding(text: string): Promise<number[]> {
  */
 export async function storeKnowledgeChunk(text: string, metadata: any = {}) {
     const embedding = await generateEmbedding(text);
+    const db = getDb();
+    if (!db) throw new Error("Database not initialized");
     await db.collection('knowledge_base').add({
         text,
         embedding,
@@ -87,6 +99,8 @@ export async function searchKnowledgeBase(query: string, limit: number = 3): Pro
     const queryEmbedding = await generateEmbedding(query);
 
     // 2. Fetch all chunks (Optimization: Cache this or use Vector Search for scale)
+    const db = getDb();
+    if (!db) return []; // Return empty if DB not available (e.g. build time or missing creds)
     const snapshot = await db.collection('knowledge_base').get();
 
     const chunks: { chunk: KnowledgeChunk, score: number }[] = [];

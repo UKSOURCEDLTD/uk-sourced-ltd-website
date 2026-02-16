@@ -1,4 +1,6 @@
 import { NextResponse } from 'next/server';
+
+export const dynamic = 'force-dynamic';
 import { checkAvailability } from '@/lib/tools/calendar';
 
 export async function POST(req: Request) {

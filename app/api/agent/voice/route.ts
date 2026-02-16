@@ -1,4 +1,6 @@
 import { NextResponse } from 'next/server';
+
+export const dynamic = 'force-dynamic';
 import { searchKnowledgeBase } from '@/lib/knowledge-base';
 import { VertexAI } from '@google-cloud/vertexai';
 import { TextToSpeechClient } from '@google-cloud/text-to-speech';

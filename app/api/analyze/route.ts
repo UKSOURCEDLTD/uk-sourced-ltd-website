@@ -1,4 +1,6 @@
-import { NextResponse } from "next/server";
+import { NextResponse } from 'next/server';
+
+export const dynamic = 'force-dynamic';
 
 const KEEPA_API_KEY = process.env.KEEPA_API_KEY;
 
